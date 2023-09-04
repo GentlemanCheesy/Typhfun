@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem.getById;
+import static net.typhonmc.typhfun.Typhfun.format;
 
 public class Recipes {
 
@@ -103,12 +104,58 @@ public class Recipes {
             null, null,                                                                     null
     };
 
+    public static ItemStack[] INFUSED_FLUTE = {
+            null, null, null,
+            null, getCustomItem(Material.PLAYER_HEAD, "Wandering Trader","10%"), null,
+            null, null, null
+    };
+    public static ItemStack[] SLUDGE = {
+            new ItemStack(Material.WARPED_FUNGUS),    new ItemStack(Material.SLIME_BALL),       new ItemStack(Material.FERMENTED_SPIDER_EYE),
+            new ItemStack(Material.POISONOUS_POTATO), new ItemStack(Material.POISONOUS_POTATO), new ItemStack(Material.POISONOUS_POTATO),
+            new ItemStack(Material.GLOW_INK_SAC),     new ItemStack(Material.MAGMA_CREAM),      new ItemStack(Material.NETHER_WART)
+    };
+    public static ItemStack[] POISON_SHOT = {
+            new ItemStack(Material.COPPER_INGOT), new ItemStack(Material.VINE), Items.SLUDGE,
+            new ItemStack(Material.VINE),         new ItemStack(Material.BOW),  Items.SLUDGE,
+            new ItemStack(Material.COPPER_INGOT), new ItemStack(Material.VINE), Items.SLUDGE
+    };
+    public static ItemStack[] SQUID_SHOT = {
+            null, null,                                                                 null,
+            null, getCustomItem(Material.PLAYER_HEAD, "Glow Squid","10%"), null,
+            null, null,                                                                 null
+    };
+    public static ItemStack[] INK_PHAIL = {
+            new ItemStack(Material.INK_SAC), new ItemStack(Material.GLASS_BOTTLE), new ItemStack(Material.GLOW_INK_SAC),
+            null,                            null,                                 null,
+            null,                            null,                                 null
+    };
+    public static ItemStack[] DRINK_MIXER = {
+            null,                                        null,                                 null,
+            new ItemStack(Material.END_ROD),             new ItemStack(Material.END_STONE),    new ItemStack(Material.END_ROD),
+            new ItemStack(Material.POPPED_CHORUS_FRUIT), new ItemStack(Material.PURPUR_BLOCK), new ItemStack(Material.POPPED_CHORUS_FRUIT)
+    };
+    public static ItemStack[] SPIKED_MILK = {
+            new ItemStack(Material.MILK_BUCKET), getCustomItem(Material.POTION,"&f&lAny&r &fPotion"), null,
+            null,                                null,                                                      null,
+            null,                                null,                                                      null
+    };
+    public static ItemStack[] SPIKED_HONEY = {
+            new ItemStack(Material.HONEY_BOTTLE), getCustomItem(Material.POTION,"&f&lAny&r &fPotion"), null,
+            null,                                 null,                                                      null,
+            null,                                 null,                                                      null
+    };
+    public static ItemStack[] PRISTINE_PRISMARINE_SHARD = {
+            null, null,                                                              null,
+            null, getCustomItem(Material.PLAYER_HEAD, "Guardian","5%"), null,
+            null, null,                                                              null
+    };
+
     //more here
 
     private static ItemStack getCustomItem(Material appearance, String name, String... lores) {
         ItemStack current = new ItemStack(appearance);
 
-        ItemMeta metadata = current.getItemMeta(); metadata.setDisplayName(name);
+        ItemMeta metadata = current.getItemMeta(); metadata.setDisplayName( name.replace('&','§') );
         List<String> lore = new ArrayList<String>(); for(String line : lores) { lore.add(line); }
         metadata.setLore(lore);
 

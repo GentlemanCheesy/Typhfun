@@ -6,6 +6,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.SubItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import net.kyori.adventure.text.minimessage.MiniMessage;
@@ -25,6 +26,10 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
     public static String format(String sentence) {
         return SERIALIZER.serialize( MINI_MESSAGE.deserialize(sentence) );
     }
+
+
+    //Create custom Recipe Type(s)
+    //private final RecipeType RECIPE_TYPE_DRINK_MIXER = new RecipeType(new NamespacedKey(this, "typhfun"), new CustomItemStack(Material.ITEM_FRAME, "&dDrink Mixer", new String[]{"&7Mix drinks and potions together", "&7to &cSpike &7drinks!"}));
 
     @Override
     public void onEnable() {
@@ -52,7 +57,7 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.WRENCH_OF_WARPING, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.WRENCH_OF_WARPING).register(this);
             new SlimefunItem(cheesy_bites, Items.VEXAL_PIPE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.VEXAL_PIPE, new SlimefunItemStack(Items.VEXAL_PIPE, 32) ).register(this);
             new SlimefunItem(cheesy_bites, Items.DISPLAY_CASE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.DISPLAY_CASE).register(this);
-            new SlimefunItem(cheesy_bites, Items.SLIME_BUCKET, RecipeType.INTERACT, Recipes.SLIME_BUCKET).register(this);
+            new SlimefunItem(cheesy_bites, Items.SLIME_BUCKET, RecipeType.NULL, Recipes.SLIME_BUCKET).register(this); //RecipeType.INTERACT has Maven-related bug
 
             new SlimefunItem(cheesy_bites, Items.BOW_OF_MIMICRY, RecipeType.MAGIC_WORKBENCH, Recipes.BOW_OF_MIMICRY).register(this);
             new SlimefunItem(cheesy_bites, Items.WOODEN_FLUID_TANK, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.WOODEN_FLUID_TANK).register(this);
@@ -64,7 +69,18 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.AXOLOTL_TANK, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.AXOLOTL_TANK).register(this);
             new SlimefunItem(cheesy_bites, Items.SPONGE_STAFF, RecipeType.MOB_DROP, Recipes.SPONGE_STAFF).register(this);
 
+            new SlimefunItem(cheesy_bites, Items.INFUSED_FLUTE, RecipeType.MOB_DROP, Recipes.INFUSED_FLUTE).register(this);
+            new SlimefunItem(cheesy_bites, Items.SLUDGE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SLUDGE, new SlimefunItemStack(Items.SLUDGE, 2) ).register(this);
+            new SlimefunItem(cheesy_bites, Items.POISON_SHOT, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.POISON_SHOT).register(this);
+            new SlimefunItem(cheesy_bites, Items.SQUID_SHOT, RecipeType.MOB_DROP, Recipes.SQUID_SHOT).register(this);
+            new SlimefunItem(cheesy_bites, Items.INK_PHAIL, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.INK_PHAIL, new SlimefunItemStack(Items.INK_PHAIL, 3) ).register(this);
+            new SlimefunItem(cheesy_bites, Items.DRINK_MIXER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.DRINK_MIXER).register(this);
+            new SlimefunItem(cheesy_bites, Items.SPIKED_MILK, RecipeType.NULL, Recipes.SPIKED_MILK).register(this);
+            new SlimefunItem(cheesy_bites, Items.SPIKED_HONEY, RecipeType.NULL, Recipes.SPIKED_HONEY).register(this);
+            new SlimefunItem(cheesy_bites, Items.PRISTINE_PRISMARINE_SHARD, RecipeType.MOB_DROP, Recipes.PRISTINE_PRISMARINE_SHARD).register(this);
+
             //more
+            //new SlimefunItem(cheesy_bites, Items., RecipeType., Recipes.).register(this);
 
         }
         /*Cheesy Power*/ {

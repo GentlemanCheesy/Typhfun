@@ -35,7 +35,7 @@ public class Items {
     public static SlimefunItemStack DISPLAY_CASE = new SlimefunItemStack("DISPLAY_CASE", Material.GLASS, "&6Display Case", "&7Shows item as dropped item.","&7Named items have name displayed.");
     public static SlimefunItemStack SLIME_BUCKET = new SlimefunItemStack("SLIME_BUCKET", Material.MILK_BUCKET, "&aSlime Bucket", "&6Item Ability&7: &aFamily Reunion","","&7Portable Friend!","&7Gets excited when in slime chunk.");
 
-    public static SlimefunItemStack BOW_OF_MIMICRY = new SlimefunItemStack("BOW_OF_MIMICRY", Material.BOW, format("<gradient:#ff9d00:red>Bow of Mimicry"), "&7Damage: &c+15","","&6Item Ability&7: &cS&6k&ei&al&9l &5T&co&6r&en&aa&9d&bo","&aRight Click&7 to open a menu for extra bows,","&7upon shooting, a random bow is used.","","&6Item Ability&7: &cRocket Roundabout","&7If no extra bows are in the menu,","&7arrows shoot as fireworks.","&8(Firework Damage: -7)");
+    public static SlimefunItemStack BOW_OF_MIMICRY = new SlimefunItemStack("BOW_OF_MIMICRY", Material.BOW, format("<gradient:#ff9d00:#ff0000>Bow of Mimicry"), "&7Damage: &c+15","","&6Item Ability&7: &cS&6k&ei&al&9l &5T&co&6r&en&aa&9d&bo","&aRight Click&7 to open a menu for extra bows,","&7upon shooting, a random bow is used.","","&6Item Ability&7: &cRocket Roundabout","&7If no extra bows are in the menu,","&7arrows shoot as fireworks.","&8(Firework Damage: -7)");
     public static SlimefunItemStack WOODEN_FLUID_TANK = new SlimefunItemStack("WOODEN_FLUID_TANK", Material.ACACIA_WOOD, "&bWooden Fluid Tank", "&7Stores Water, Milk, or Honey.");
     public static SlimefunItemStack STONE_FLUID_TANK = new SlimefunItemStack("STONE_FLUID_TANK", Material.SMOOTH_STONE, "&7Stone Fluid Tank", "&7Stores Water, Milk, or Honey.");
     public static SlimefunItemStack BLACKSTONE_FLUID_TANK = new SlimefunItemStack("BLACKSTONE_FLUID_TANK", Material.POLISHED_BLACKSTONE, "&8Blackstone Fluid Tank", "&7Stores Water, Milk, Honey, or Lava!");
@@ -44,5 +44,19 @@ public class Items {
     public static SlimefunItemStack FISH_TANK = new SlimefunItemStack("FISH_TANK", Material.BLUE_STAINED_GLASS, "&1Fish Tank", "&7Stores Fish, for transport.");
     public static SlimefunItemStack AXOLOTL_TANK = new SlimefunItemStack("AXOLOTL_TANK", Material.PINK_STAINED_GLASS, "&dAxolotl Tank", "&7Stores Axolotl(s), for transport.");
     public static SlimefunItemStack SPONGE_STAFF = new SlimefunItemStack("SPONGE_STAFF", Material.BLAZE_ROD, "&aSponge Staff", "&f0/1 Buckets Filled","","&6Item Ability&7: &6Absorption","&aRight Click&7 on a water source to store in staffs' buckets","","&6Item Ability&7: &6Jet Propulsion","&aLeft Click&7 to place stored water","","&6Item Ability&7: &3Modular Storage","&7Place a bucket onto staff to increase storage by one.","&8(Compatible with Fluid Tanks)");
+
+    public static SlimefunItemStack INFUSED_FLUTE = new SlimefunItemStack("INFUSED_FLUTE",Material.BAMBOO,"&bInfused Flute","&6Item Ability&7: &6Teleportation Tune","&7Play the correct tune to teleport, randomly, nearby","&8(1h cooldown)");
+    public static SlimefunItemStack SLUDGE = new SlimefunItemStack("SLUDGE",Material.SLIME_BALL,"&5Sludge");
+    public static SlimefunItemStack POISON_SHOT = new SlimefunItemStack("POISON_SHOT",Material.BOW,"&2Poison Shot","&7Damage: &c+10","","&6Item Ability&7: &aPiercing Toxins","&7Poisonous Arrows add 50% base damage");
+    public static SlimefunItemStack SQUID_SHOT = new SlimefunItemStack("SQUID_SHOT",Material.BOW,format("<gradient:#0000AA:#55FFFF>Squidshot"),"&7Damage: &c+4","","&6Item Ability&7: "+format("<gradient:#0000AA:#55FFFF>Ink Frenzy"),"&7Applies arrow effects based on inks used","&7May use up to two unique inks at once","&8(5s cooldown)");
+    public static SlimefunItemStack INK_PHAIL = new SlimefunItemStack("INK_PHAIL",Material.PLAYER_HEAD,"&7Ink Phail","","&fSmells nasty");
+    public static SlimefunItemStack DRINK_MIXER = new SlimefunItemStack("DRINK_MIXER",Material.ITEM_FRAME,"&dDrink Mixer","&8The future is now, old man!","","&7Mix drinks with points and more");
+    public static SlimefunItemStack SPIKED_MILK = new SlimefunItemStack("SPIKED_MILK",Material.MILK_BUCKET,"&cSpiked Milk","","&6Item Ability&7: &cSpiked","&7This drink is spiked with potion effects,","&7effects apply when drank.");
+    public static SlimefunItemStack SPIKED_HONEY = new SlimefunItemStack("SPIKED_HONEY",Material.HONEY_BOTTLE,"&cSpiked Honey","","&6Item Ability&7: &cSpiked","&7This drink is spiked with potion effects,","&7effects apply when drank.");
+    public static SlimefunItemStack PRISTINE_PRISMARINE_SHARD = new SlimefunItemStack("PRISTINE_PRISMARINE_SHARD",Material.PRISMARINE_SHARD,format("<gradient:#55FFFF:#FFFFFF:#FF5555>Pristine Prismarine Shard"),"&7So pure, it reflects!");
+
+    //public static SlimefunItemStack = new SlimefunItemStack("",Material.,"","");
+
+    //more
 
 }
