@@ -1,6 +1,7 @@
 package net.typhonmc.typhfun;
 
 import org.bukkit.Material;
+import org.bukkit.entity.Item;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
@@ -56,14 +57,53 @@ public class Recipes {
             null, null,                           null
     };
 
-    //more here
-
-
     public static ItemStack[] BOW_OF_MIMICRY = {
-            new ItemStack(Material.EMERALD), null,                            new ItemStack(Material.EMERALD),
-            null,                            new ItemStack(Material.DIAMOND), null,
-            new ItemStack(Material.EMERALD), null,                            new ItemStack(Material.EMERALD)
+            new ItemStack(Material.AMETHYST_SHARD),   new ItemStack(Material.NETHER_STAR),     new ItemStack(Material.AMETHYST_SHARD),
+            getById("MAGICAL_GLASS").getItem(),       new ItemStack(Material.BOW),             getById("MAGICAL_GLASS").getItem(),
+            new ItemStack(Material.ENCHANTING_TABLE), getById("STRANGE_NETHER_GOO").getItem(), new ItemStack(Material.ENCHANTING_TABLE)
     };
+    public static ItemStack[] WOODEN_FLUID_TANK = {
+            new ItemStack(Material.OAK_WOOD), new ItemStack(Material.HOPPER), new ItemStack(Material.OAK_WOOD),
+            new ItemStack(Material.GLASS),    new ItemStack(Material.BARREL), new ItemStack(Material.GLASS),
+            new ItemStack(Material.OAK_WOOD), new ItemStack(Material.BUCKET), new ItemStack(Material.OAK_WOOD)
+    };
+    public static ItemStack[] STONE_FLUID_TANK = {
+            new ItemStack(Material.SMOOTH_STONE), new ItemStack(Material.HOPPER), new ItemStack(Material.SMOOTH_STONE),
+            new ItemStack(Material.IRON_INGOT),   Items.WOODEN_FLUID_TANK,        new ItemStack(Material.IRON_INGOT),
+            new ItemStack(Material.SMOOTH_STONE), new ItemStack(Material.BUCKET), new ItemStack(Material.SMOOTH_STONE)
+    };
+    public static ItemStack[] BLACKSTONE_FLUID_TANK = {
+            new ItemStack(Material.POLISHED_BLACKSTONE), new ItemStack(Material.HOPPER), new ItemStack(Material.POLISHED_BLACKSTONE),
+            new ItemStack(Material.GOLD_INGOT),          Items.STONE_FLUID_TANK,         new ItemStack(Material.GOLD_INGOT),
+            new ItemStack(Material.POLISHED_BLACKSTONE), new ItemStack(Material.BUCKET), new ItemStack(Material.POLISHED_BLACKSTONE)
+    };
+    public static ItemStack[] OBSIDIAN_FLUID_TANK = {
+            new ItemStack(Material.OBSIDIAN), new ItemStack(Material.HOPPER), new ItemStack(Material.OBSIDIAN),
+            new ItemStack(Material.DIAMOND),  Items.BLACKSTONE_FLUID_TANK,    new ItemStack(Material.DIAMOND),
+            new ItemStack(Material.OBSIDIAN), new ItemStack(Material.BUCKET), new ItemStack(Material.OBSIDIAN)
+    };
+    public static ItemStack[] FROSTY_TANK = {
+            new ItemStack(Material.OXIDIZED_COPPER), new ItemStack(Material.TINTED_GLASS),  new ItemStack(Material.OXIDIZED_COPPER),
+            new ItemStack(Material.TINTED_GLASS),    getById("ANCIENT_RUNE_AIR").getItem(), new ItemStack(Material.TINTED_GLASS),
+            new ItemStack(Material.BARREL),          new ItemStack(Material.BLUE_ICE),      new ItemStack(Material.BARREL)
+    };
+    public static ItemStack[] FISH_TANK = {
+            new ItemStack(Material.COPPER_BLOCK), new ItemStack(Material.TINTED_GLASS),     new ItemStack(Material.COPPER_BLOCK),
+            new ItemStack(Material.TINTED_GLASS), getById("ANCIENT_RUNE_WATER").getItem(),  new ItemStack(Material.TINTED_GLASS),
+            new ItemStack(Material.BARREL),       new ItemStack(Material.DRIED_KELP_BLOCK), new ItemStack(Material.BARREL)
+    };
+    public static ItemStack[] AXOLOTL_TANK = {
+            new ItemStack(Material.COPPER_BLOCK), new ItemStack(Material.TINTED_GLASS),    new ItemStack(Material.COPPER_BLOCK),
+            new ItemStack(Material.TINTED_GLASS), getById("ANCIENT_RUNE_WATER").getItem(), new ItemStack(Material.TINTED_GLASS),
+            new ItemStack(Material.BARREL),       new ItemStack(Material.MOSS_BLOCK),      new ItemStack(Material.BARREL)
+    };
+    public static ItemStack[] SPONGE_STAFF = {
+            null, null,                                                                     null,
+            null, getCustomItem(Material.PLAYER_HEAD, "Elder Guardian","50%"), null,
+            null, null,                                                                     null
+    };
+
+    //more here
 
     private static ItemStack getCustomItem(Material appearance, String name, String... lores) {
         ItemStack current = new ItemStack(appearance);

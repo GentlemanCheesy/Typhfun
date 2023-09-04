@@ -35,5 +35,14 @@ public class Items {
     public static SlimefunItemStack DISPLAY_CASE = new SlimefunItemStack("DISPLAY_CASE", Material.GLASS, "&6Display Case", "&7Shows item as dropped item.","&7Named items have name displayed.");
     public static SlimefunItemStack SLIME_BUCKET = new SlimefunItemStack("SLIME_BUCKET", Material.MILK_BUCKET, "&aSlime Bucket", "&6Item Ability&7: &aFamily Reunion","","&7Portable Friend!","&7Gets excited when in slime chunk.");
 
-    public static SlimefunItemStack BOW_OF_MIMICRY = new SlimefunItemStack("BOW_OF_MIMICRY", Material.BOW, format("<gradient:#ff9d00:red>Bow of Mimicry"), "&c+20% Coolness");
+    public static SlimefunItemStack BOW_OF_MIMICRY = new SlimefunItemStack("BOW_OF_MIMICRY", Material.BOW, format("<gradient:#ff9d00:red>Bow of Mimicry"), "&7Damage: &c+15","","&6Item Ability&7: &cS&6k&ei&al&9l &5T&co&6r&en&aa&9d&bo","&aRight Click&7 to open a menu for extra bows,","&7upon shooting, a random bow is used.","","&6Item Ability&7: &cRocket Roundabout","&7If no extra bows are in the menu,","&7arrows shoot as fireworks.","&8(Firework Damage: -7)");
+    public static SlimefunItemStack WOODEN_FLUID_TANK = new SlimefunItemStack("WOODEN_FLUID_TANK", Material.ACACIA_WOOD, "&bWooden Fluid Tank", "&7Stores Water, Milk, or Honey.");
+    public static SlimefunItemStack STONE_FLUID_TANK = new SlimefunItemStack("STONE_FLUID_TANK", Material.SMOOTH_STONE, "&7Stone Fluid Tank", "&7Stores Water, Milk, or Honey.");
+    public static SlimefunItemStack BLACKSTONE_FLUID_TANK = new SlimefunItemStack("BLACKSTONE_FLUID_TANK", Material.POLISHED_BLACKSTONE, "&8Blackstone Fluid Tank", "&7Stores Water, Milk, Honey, or Lava!");
+    public static SlimefunItemStack OBSIDIAN_FLUID_TANK = new SlimefunItemStack("OBSIDIAN_FLUID_TANK", Material.OBSIDIAN, "&5Obsidian Fluid Tank", "&7Stores Water, Milk, Honey, or Lava!");
+    public static SlimefunItemStack FROSTY_TANK = new SlimefunItemStack("FROSTY_TANK", Material.BLUE_ICE, "&1Frosty Tank", "&7Stores Powdered Snow.");
+    public static SlimefunItemStack FISH_TANK = new SlimefunItemStack("FISH_TANK", Material.BLUE_STAINED_GLASS, "&1Fish Tank", "&7Stores Fish, for transport.");
+    public static SlimefunItemStack AXOLOTL_TANK = new SlimefunItemStack("AXOLOTL_TANK", Material.PINK_STAINED_GLASS, "&dAxolotl Tank", "&7Stores Axolotl(s), for transport.");
+    public static SlimefunItemStack SPONGE_STAFF = new SlimefunItemStack("SPONGE_STAFF", Material.BLAZE_ROD, "&aSponge Staff", "&f0/1 Buckets Filled","","&6Item Ability&7: &6Absorption","&aRight Click&7 on a water source to store in staffs' buckets","","&6Item Ability&7: &6Jet Propulsion","&aLeft Click&7 to place stored water","","&6Item Ability&7: &3Modular Storage","&7Place a bucket onto staff to increase storage by one.","&8(Compatible with Fluid Tanks)");
+
 }

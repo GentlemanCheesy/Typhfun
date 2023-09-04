@@ -54,7 +54,18 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.DISPLAY_CASE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.DISPLAY_CASE).register(this);
             new SlimefunItem(cheesy_bites, Items.SLIME_BUCKET, RecipeType.INTERACT, Recipes.SLIME_BUCKET).register(this);
 
+            new SlimefunItem(cheesy_bites, Items.BOW_OF_MIMICRY, RecipeType.MAGIC_WORKBENCH, Recipes.BOW_OF_MIMICRY).register(this);
+            new SlimefunItem(cheesy_bites, Items.WOODEN_FLUID_TANK, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.WOODEN_FLUID_TANK).register(this);
+            new SlimefunItem(cheesy_bites, Items.STONE_FLUID_TANK, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.STONE_FLUID_TANK).register(this);
+            new SlimefunItem(cheesy_bites, Items.BLACKSTONE_FLUID_TANK, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.BLACKSTONE_FLUID_TANK).register(this);
+            new SlimefunItem(cheesy_bites, Items.OBSIDIAN_FLUID_TANK, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.OBSIDIAN_FLUID_TANK).register(this);
+            new SlimefunItem(cheesy_bites, Items.FROSTY_TANK, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.FROSTY_TANK).register(this);
+            new SlimefunItem(cheesy_bites, Items.FISH_TANK, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.FISH_TANK).register(this);
+            new SlimefunItem(cheesy_bites, Items.AXOLOTL_TANK, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.AXOLOTL_TANK).register(this);
+            new SlimefunItem(cheesy_bites, Items.SPONGE_STAFF, RecipeType.MOB_DROP, Recipes.SPONGE_STAFF).register(this);
+
             //more
+
         }
         /*Cheesy Power*/ {
         }
