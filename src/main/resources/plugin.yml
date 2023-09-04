@@ -1,5 +1,5 @@
 name: Typhfun
-author: GentlemanCheesy
+authors: [GentlemanCheesy,Wheeler-Shigley]
 description: A Slimefun4-Addon made from content on Typhon MC
 version: '${project.version}'
 website: https://github.com/GentlemanCheesy/Typhfun
