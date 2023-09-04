@@ -1,16 +1,8 @@
 name: Typhfun
-
 author: GentlemanCheesy
-
 description: A Slimefun4-Addon made from content on Typhon MC
-
-main: me.gentlemancheesy.typhfun.TyphfunAddon
-
+version: '${project.version}'
 website: https://github.com/GentlemanCheesy/Typhfun
-
-version: ${project.version}
-
-api-version: 1.14
-
-depend:
-- Slimefun
+main: net.typhonmc.typhfun.Typhfun
+api-version: '1.20'
+depend: [Slimefun]
