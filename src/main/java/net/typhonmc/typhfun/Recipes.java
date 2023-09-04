@@ -1,14 +1,12 @@
 package net.typhonmc.typhfun;
 
 import org.bukkit.Material;
-import org.bukkit.entity.Item;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
 import java.util.List;
 
 import static io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem.getById;
-import static net.typhonmc.typhfun.Typhfun.format;
 
 public class Recipes {
 
@@ -148,6 +146,52 @@ public class Recipes {
             null, null,                                                              null,
             null, getCustomItem(Material.PLAYER_HEAD, "Guardian","5%"), null,
             null, null,                                                              null
+    };
+
+    public static ItemStack[] PRISTINE_PRISM = {
+            null,                            Items.PRISTINE_PRISMARINE_SHARD,      null,
+            Items.PRISTINE_PRISMARINE_SHARD, new ItemStack(Material.TINTED_GLASS), Items.PRISTINE_PRISMARINE_SHARD,
+            null,                            Items.PRISTINE_PRISMARINE_SHARD,      null
+    };
+    public static ItemStack[] PRISM_PICKAXE = {
+            getById("HARDENED_GLASS").getItem(), Items.PRISTINE_PRISM,             getById("HARDENED_GLASS").getItem(),
+            null,                                getById("GILDED_IRON").getItem(), null,
+            null,                                getById("GILDED_IRON").getItem(), null
+    };
+    public static ItemStack[] PRISM_SHOVEL = {
+            null, Items.PRISTINE_PRISM,             null,
+            null, getById("GILDED_IRON").getItem(), null,
+            null, getById("GILDED_IRON").getItem(), null
+    };
+    public static ItemStack[] MIRROR_BLADE = {
+            null, getById("HARDENED_GLASS").getItem(), null,
+            null, getById("HARDENED_GLASS").getItem(), null,
+            null, Items.PRISTINE_PRISM,                null
+    };
+    public static ItemStack[] HURRICANE_BLASTER = {
+            null,                                Items.PRISTINE_PRISMARINE_SHARD,         null,
+            Items.PRISTINE_PRISMARINE_SHARD,     getById("ANCIENT_RUNE_WATER").getItem(), Items.PRISTINE_PRISMARINE_SHARD,
+            getById("HARDENED_GLASS").getItem(), Items.STONE_FLUID_TANK,                  getById("HARDENED_GLASS").getItem()
+    };
+    public static ItemStack[] PAINTERS_POLISH = {
+            null, null,                            null,
+            null, new ItemStack(Material.CALCITE), null,
+            null, null,                            null
+    };
+    public static ItemStack[] PAINTERS_BRICKS = {
+            null, null,                  null,
+            null, Items.PAINTERS_POLISH, null,
+            null, null,                  null
+    };
+    public static ItemStack[] SENSOR_COMPONENT_ONE = {
+            Items.PRISTINE_PRISMARINE_SHARD,         new ItemStack(Material.SCULK_SENSOR),     Items.PRISTINE_PRISMARINE_SHARD,
+            new ItemStack(Material.TINTED_GLASS),    new ItemStack(Material.ENDER_EYE),        new ItemStack(Material.TINTED_GLASS),
+            new ItemStack(Material.OXIDIZED_COPPER), getById("BASIC_CIRCUIT_BOARD").getItem(), new ItemStack(Material.OXIDIZED_COPPER)
+    };
+    public static ItemStack[] SENSOR_COMPONENT_TWO = {
+            getById("COBALT_INGOT").getItem(),        new ItemStack(Material.TINTED_GLASS), getById("COBALT_INGOT").getItem(),
+            getById("ANDROID_MEMORY_CORE").getItem(), Items.SENSOR_COMPONENT_ONE,           getById("ANDROID_MEMORY_CORE").getItem(),
+            getById("SILICON").getItem(),             getById("SILICON").getItem(),         getById("SILICON").getItem()
     };
 
     //more here

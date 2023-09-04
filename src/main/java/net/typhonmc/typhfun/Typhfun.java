@@ -6,11 +6,8 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.SubItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import net.kyori.adventure.text.minimessage.MiniMessage;
-import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -19,17 +16,9 @@ import org.jetbrains.annotations.Nullable;
 
 public final class Typhfun extends JavaPlugin implements SlimefunAddon {
 
-    //Credit to AlchimiaVitae from [addon](https://github.com/Apeiros-46B/AlchimiaVitae)
-    private static MiniMessage MINI_MESSAGE;
-    private static LegacyComponentSerializer SERIALIZER;
-
-    public static String format(String sentence) {
-        return SERIALIZER.serialize( MINI_MESSAGE.deserialize(sentence) );
-    }
-
-
-    //Create custom Recipe Type(s)
-    //private final RecipeType RECIPE_TYPE_DRINK_MIXER = new RecipeType(new NamespacedKey(this, "typhfun"), new CustomItemStack(Material.ITEM_FRAME, "&dDrink Mixer", new String[]{"&7Mix drinks and potions together", "&7to &cSpike &7drinks!"}));
+    //Create custom Recipe Types
+    //private final RecipeType RECIPETYPE_DRINK_MIXER = ?
+    //private final RecipeType RECIPETYPE_SMITHING_PRESS = ?
 
     @Override
     public void onEnable() {
@@ -75,9 +64,19 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.SQUID_SHOT, RecipeType.MOB_DROP, Recipes.SQUID_SHOT).register(this);
             new SlimefunItem(cheesy_bites, Items.INK_PHAIL, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.INK_PHAIL, new SlimefunItemStack(Items.INK_PHAIL, 3) ).register(this);
             new SlimefunItem(cheesy_bites, Items.DRINK_MIXER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.DRINK_MIXER).register(this);
-            new SlimefunItem(cheesy_bites, Items.SPIKED_MILK, RecipeType.NULL, Recipes.SPIKED_MILK).register(this);
-            new SlimefunItem(cheesy_bites, Items.SPIKED_HONEY, RecipeType.NULL, Recipes.SPIKED_HONEY).register(this);
+            new SlimefunItem(cheesy_bites, Items.SPIKED_MILK, RecipeType.NULL, Recipes.SPIKED_MILK).register(this); // <--- RecipeType.DRINK_MIXER
+            new SlimefunItem(cheesy_bites, Items.SPIKED_HONEY, RecipeType.NULL, Recipes.SPIKED_HONEY).register(this); // <--- RecipeType.DRINK_MIXER
             new SlimefunItem(cheesy_bites, Items.PRISTINE_PRISMARINE_SHARD, RecipeType.MOB_DROP, Recipes.PRISTINE_PRISMARINE_SHARD).register(this);
+
+            new SlimefunItem(cheesy_bites, Items.PRISTINE_PRISM, RecipeType.MAGIC_WORKBENCH, Recipes.PRISTINE_PRISM).register(this);
+            new SlimefunItem(cheesy_bites, Items.PRISM_PICKAXE, RecipeType.MAGIC_WORKBENCH, Recipes.PRISM_PICKAXE).register(this);
+            new SlimefunItem(cheesy_bites, Items.PRISM_SHOVEL, RecipeType.MAGIC_WORKBENCH, Recipes.PRISM_SHOVEL).register(this);
+            new SlimefunItem(cheesy_bites, Items.MIRROR_BLADE, RecipeType.MAGIC_WORKBENCH, Recipes.MIRROR_BLADE).register(this);
+            new SlimefunItem(cheesy_bites, Items.HURRICANE_BLASTER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.HURRICANE_BLASTER).register(this);
+            new SlimefunItem(cheesy_bites, Items.PAINTERS_POLISH, RecipeType.NULL, Recipes.PAINTERS_POLISH).register(this); // <--- RecipeType.SMITHING_PRESS
+            new SlimefunItem(cheesy_bites, Items.PAINTERS_BRICKS, RecipeType.NULL, Recipes.PAINTERS_BRICKS).register(this); // <--- RecipeType.SMITHING_PRESS
+            new SlimefunItem(cheesy_bites, Items.SENSOR_COMPONENT_ONE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SENSOR_COMPONENT_ONE).register(this);
+            new SlimefunItem(cheesy_bites, Items.SENSOR_COMPONENT_TWO, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SENSOR_COMPONENT_TWO).register(this);
 
             //more
             //new SlimefunItem(cheesy_bites, Items., RecipeType., Recipes.).register(this);

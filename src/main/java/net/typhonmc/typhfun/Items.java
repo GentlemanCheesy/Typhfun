@@ -55,8 +55,18 @@ public class Items {
     public static SlimefunItemStack SPIKED_HONEY = new SlimefunItemStack("SPIKED_HONEY",Material.HONEY_BOTTLE,"&cSpiked Honey","","&6Item Ability&7: &cSpiked","&7This drink is spiked with potion effects,","&7effects apply when drank.");
     public static SlimefunItemStack PRISTINE_PRISMARINE_SHARD = new SlimefunItemStack("PRISTINE_PRISMARINE_SHARD",Material.PRISMARINE_SHARD,format("<gradient:#55FFFF:#FFFFFF:#FF5555>Pristine Prismarine Shard"),"&7So pure, it reflects!");
 
-    //public static SlimefunItemStack = new SlimefunItemStack("",Material.,"","");
+    public static SlimefunItemStack PRISTINE_PRISM = new SlimefunItemStack("PRISTINE_PRISM",Material.PRISMARINE_SHARD,format("<gradient:#FF55FF:#FFFF55>Pristine Prism"),"&8Crafting Material");
+    public static SlimefunItemStack PRISM_PICKAXE = new SlimefunItemStack("PRISM_PICKAXE",Material.DIAMOND_PICKAXE,format("<gradient:#0000AA:#FFFFFF:#AA0000>Prism Pickaxe"),"","&6Mining Ability&7: &bBeam Breaker","&750% chance to break adjacent blocks");
+    public static SlimefunItemStack PRISM_SHOVEL = new SlimefunItemStack("PRISM_SHOVEL",Material.DIAMOND_SHOVEL,format("<gradient:#AA0000:#FFFFFF:#AA00AA>Prism Shovel"),"","&6Mining Ability&7: &bBeam Breaker","&750% chance to break adjacent blocks");
+    public static SlimefunItemStack MIRROR_BLADE = new SlimefunItemStack("MIRROR_BLADE",Material.IRON_SWORD,format("<gradient:#00AAAA:#55FFFF>Mirror Blade"),"&7Damage: &c+1","","&6Item Ability&7: &bMirrored","&7Permanently mirrors the properties of","&7the first sword it contacts.","&8Swap, in inventory, to mirror.");
+    public static SlimefunItemStack HURRICANE_BLASTER = new SlimefunItemStack("HURRICANE_BLASTER",Material.DIAMOND_HORSE_ARMOR,format("<gradient:#0000AA:#55FFFF>Hurricane Blaster"),"&f0/5 Buckets Filled","","&6Item Ability&7: "+format("<gradient:#0000AA:#55FFFF>Jet Propulsion"),"&7Absorbs rain or swimming water to later","&7Propell oneself upwards.");
+    public static SlimefunItemStack PAINTERS_POLISH = new SlimefunItemStack("PAINTERS_POLISH",Material.TIPPED_ARROW,"&FPainters' Polish","&8Dye-able");
+    public static SlimefunItemStack PAINTERS_BRICKS = new SlimefunItemStack("PAINTERS_BRICKS",Material.TIPPED_ARROW,"Painters' Bricks","&8Dye-able");
+    public static SlimefunItemStack SENSOR_COMPONENT_ONE = new SlimefunItemStack("SENSOR_COMPONENT_ONE",Material.OXIDIZED_COPPER,"&fSensor Component I","&8Crafting Material");
+    public static SlimefunItemStack SENSOR_COMPONENT_TWO = new SlimefunItemStack("SENSOR_COMPONENT_TWO",Material.OXIDIZED_COPPER,"&fSensor Component II","&8Crafting Material");
 
     //more
+    //public static SlimefunItemStack = new SlimefunItemStack("",Material.,"","");
+
 
 }
