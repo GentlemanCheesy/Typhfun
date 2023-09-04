@@ -63,7 +63,7 @@ public class TyphfunAddon extends JavaPlugin implements SlimefunAddon {
          * This class has many constructors, it is very important
          * that you give each item a unique id.
          */
-        SlimefunItemStack slimefunItem = new SlimefunItemStack("TYF_ABILIBOW_MIMICRY", Material.BOW, format("Abilibow of Mimicry"), "&c+20% Coolness");
+        SlimefunItemStack slimefunItem = new SlimefunItemStack("TYF_ABILIBOW_MIMICRY", Material.BOW, format("<gradient:#ff9d00:red>Abilibow of Mimicry"), "&c+20% Coolness");
 
         /*
          * 3. Creating a Recipe
