@@ -1,12 +1,14 @@
 package net.typhonmc.typhfun;
 
 import org.bukkit.Material;
+import org.bukkit.entity.Item;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
 import java.util.List;
 
 import static io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem.getById;
+import static net.typhonmc.typhfun.Items.format;
 
 public class Recipes {
 
@@ -192,6 +194,52 @@ public class Recipes {
             getById("COBALT_INGOT").getItem(),        new ItemStack(Material.TINTED_GLASS), getById("COBALT_INGOT").getItem(),
             getById("ANDROID_MEMORY_CORE").getItem(), Items.SENSOR_COMPONENT_ONE,           getById("ANDROID_MEMORY_CORE").getItem(),
             getById("SILICON").getItem(),             getById("SILICON").getItem(),         getById("SILICON").getItem()
+    };
+
+    public static ItemStack[] MOB_SENSOR = {
+            null,                            new ItemStack(Material.LEATHER), null,
+            new ItemStack(Material.LEATHER), Items.SENSOR_COMPONENT_ONE,      new ItemStack(Material.LEATHER),
+            null,                            new ItemStack(Material.LEATHER), null
+    };
+    public static ItemStack[] PLAYER_SENSOR = {
+            null,                            new ItemStack(Material.DIAMOND), null,
+            new ItemStack(Material.DIAMOND), Items.SENSOR_COMPONENT_ONE,      new ItemStack(Material.DIAMOND),
+            null,                            new ItemStack(Material.DIAMOND), null
+    };
+    public static ItemStack[] ITEM_SENSOR = {
+            null,                           new ItemStack(Material.HOPPER), null,
+            new ItemStack(Material.HOPPER), Items.SENSOR_COMPONENT_ONE,     new ItemStack(Material.HOPPER),
+            null,                           new ItemStack(Material.HOPPER), null
+    };
+    public static ItemStack[] ADVANCED_PLAYER_SENSOR = {
+            null,                            new ItemStack(Material.DIAMOND), null,
+            new ItemStack(Material.DIAMOND), Items.SENSOR_COMPONENT_TWO,      new ItemStack(Material.DIAMOND),
+            null,                            new ItemStack(Material.DIAMOND), null
+    };
+    public static ItemStack[] ADVANCED_ITEM_SENSOR = {
+            null,                           new ItemStack(Material.HOPPER), null,
+            new ItemStack(Material.HOPPER), Items.SENSOR_COMPONENT_TWO,     new ItemStack(Material.HOPPER),
+            null,                           new ItemStack(Material.HOPPER), null
+    };
+    public static ItemStack[] HOSTILITY_SENSOR = {
+            null,                        new ItemStack(Material.TNT), null,
+            new ItemStack(Material.TNT), Items.SENSOR_COMPONENT_TWO,  new ItemStack(Material.TNT),
+            null,                        new ItemStack(Material.TNT), null
+    };
+    public static ItemStack[] LASAGNA = {
+            null, null,                                                                                                      null,
+            null, getCustomItem(Material.PLAYER_HEAD, format("<gradient:#FFAA00:#FFFF55>Lasagnaught"),"4-8"), null,
+            null, null,                                                                                                       null
+    };
+    public static ItemStack[] IMPASTA = {
+            null, null,                                                                                                       null,
+            null, getCustomItem(Material.PLAYER_HEAD, format("<gradient:#FFAA00:#FFFF55>Lasagnaught"),"2.5%"), null,
+            null, null,                                                                                                        null
+    };
+    public static ItemStack[] LINGUINE_LANCE = {
+            null, null,                                                                                                     null,
+            null, getCustomItem(Material.PLAYER_HEAD, format("<gradient:#FFAA00:#FFFF55>Lasagnaught"),"5%"), null,
+            null, null,                                                                                                      null
     };
 
     //more here

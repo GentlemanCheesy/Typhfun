@@ -19,6 +19,7 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
     //Create custom Recipe Types
     //private final RecipeType RECIPETYPE_DRINK_MIXER = ?
     //private final RecipeType RECIPETYPE_SMITHING_PRESS = ?
+    //private final RecipeType CUSTOM_MOB_DROP = ?
 
     @Override
     public void onEnable() {
@@ -77,6 +78,16 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.PAINTERS_BRICKS, RecipeType.NULL, Recipes.PAINTERS_BRICKS).register(this); // <--- RecipeType.SMITHING_PRESS
             new SlimefunItem(cheesy_bites, Items.SENSOR_COMPONENT_ONE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SENSOR_COMPONENT_ONE).register(this);
             new SlimefunItem(cheesy_bites, Items.SENSOR_COMPONENT_TWO, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SENSOR_COMPONENT_TWO).register(this);
+
+            new SlimefunItem(cheesy_bites, Items.MOB_SENSOR, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.MOB_SENSOR).register(this);
+            new SlimefunItem(cheesy_bites, Items.PLAYER_SENSOR, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.PLAYER_SENSOR).register(this);
+            new SlimefunItem(cheesy_bites, Items.ITEM_SENSOR, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.ITEM_SENSOR).register(this);
+            new SlimefunItem(cheesy_bites, Items.ADVANCED_PLAYER_SENSOR, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.ADVANCED_PLAYER_SENSOR).register(this);
+            new SlimefunItem(cheesy_bites, Items.ADVANCED_ITEM_SENSOR, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.ADVANCED_ITEM_SENSOR).register(this);
+            new SlimefunItem(cheesy_bites, Items.HOSTILITY_SENSOR, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.HOSTILITY_SENSOR).register(this);
+            new SlimefunItem(cheesy_bites, Items.LASAGNA, RecipeType.NULL, Recipes.LASAGNA).register(this); //<--- RecipeType.CUSTOM_MOB_DROP
+            new SlimefunItem(cheesy_bites, Items.IMPASTA, RecipeType.NULL, Recipes.IMPASTA, new SlimefunItemStack(Items.IMPASTA, 6) ).register(this); //<--- RecipeType.CUSTOM_MOB_DROP
+            new SlimefunItem(cheesy_bites, Items.LINGUINE_LANCE, RecipeType.NULL, Recipes.LINGUINE_LANCE).register(this); //<--- RecipeType.CUSTOM_MOB_DROP
 
             //more
             //new SlimefunItem(cheesy_bites, Items., RecipeType., Recipes.).register(this);

@@ -8,7 +8,7 @@ import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Material;
 
 public class Items {
-    //Credit to AlchimiaVitae from [addon](https://github.com/Apeiros-46B/AlchimiaVitae) for MiniMessage, LegacyComponentSerializer, and format()
+    //Credit to Apeiros from [AlchimiaVitae](https://github.com/Apeiros-46B/AlchimiaVitae) for MiniMessage, LegacyComponentSerializer, and format()
     private static final MiniMessage MINI_MESSAGE = MiniMessage.builder()
             .tags(  TagResolver.builder()
                     .resolver( StandardTags.color() )
@@ -65,8 +65,17 @@ public class Items {
     public static SlimefunItemStack SENSOR_COMPONENT_ONE = new SlimefunItemStack("SENSOR_COMPONENT_ONE",Material.OXIDIZED_COPPER,"&fSensor Component I","&8Crafting Material");
     public static SlimefunItemStack SENSOR_COMPONENT_TWO = new SlimefunItemStack("SENSOR_COMPONENT_TWO",Material.OXIDIZED_COPPER,"&fSensor Component II","&8Crafting Material");
 
+    public static SlimefunItemStack MOB_SENSOR = new SlimefunItemStack("MOB_SENSOR",Material.DARK_PRISMARINE,"&bMob Sensor","&7Senses nearby mobs","","&8Right-Click/Left-Click to change radius","&8(Maximum radius of 10m)");
+    public static SlimefunItemStack PLAYER_SENSOR = new SlimefunItemStack("PLAYER_SENSOR ",Material.LIGHT_BLUE_WOOL,"&bPlayer Sensor","&7Senses nearby players","","&8Right-Click/Left-Click to change radius","&8(Maximum radius of 10m)");
+    public static SlimefunItemStack ITEM_SENSOR = new SlimefunItemStack("ITEM_SENSOR",Material.LIGHT_BLUE_CONCRETE,"&bItem Sensor","&7Senses nearby items","","&8Right-Click/Left-Click to change radius","&8(Maximum radius of 10m)");
+    public static SlimefunItemStack ADVANCED_PLAYER_SENSOR = new SlimefunItemStack("ADVANCED_PLAYER_SENSOR",Material.BLUE_WOOL,"&bAdvanced Player Sensor","&7Senses nearby players","","&8Right-Click/Left-Click to change radius","&8(Maximum radius of 15m)","&8Shift-Right-Click to toggle mode");
+    public static SlimefunItemStack ADVANCED_ITEM_SENSOR = new SlimefunItemStack("ADVANCED_ITEM_SENSOR",Material.BLUE_CONCRETE,"&bAdvanced Item Sensor","&7Senses nearby items","","&8Right-Click/Left-Click to change radius","&8(Maximum radius of 15m)","&8Shift-Right-Click to toggle mode");
+    public static SlimefunItemStack HOSTILITY_SENSOR = new SlimefunItemStack("HOSTILITY_SENSOR",Material.CHISELED_DEEPSLATE,"&4Hostility Sensor","&7Senses nearby combat","","&8Right-Click/Left-Click to change radius","&8(Maximum radius of 30m)","&8Shift-Right-Click to toggle mode");
+    public static SlimefunItemStack LASAGNA = new SlimefunItemStack("TYPHON_LASAGNA",Material.PLAYER_HEAD,format("<gradient:#FFAA00:#FFFF55>Lasagna"),"&a+4&7 Saturation","&8Consumed on use");
+    public static SlimefunItemStack IMPASTA = new SlimefunItemStack("IMPASTA",Material.NAUTILUS_SHELL,"&eImpasta","&8Smithing Ingredient","","&6Item Ability&7: "+format("<gradient:#FFAA00:#FFFF55>When the Impasta is sauce!"),"&7When wearing any armor with this applied,","&7ones death message will differ.");
+    public static SlimefunItemStack LINGUINE_LANCE = new SlimefunItemStack("LINGUINE_LANCE",Material.IRON_SWORD,format("<gradient:#FFAA00:#FFFF55>Linguine Lance"),"&7Damage: &c+7","","&6Item Ability&7: "+format("<gradient:#FFAA00:#FFFF55>I have the sauce!"),"&aRight Click&7 to activate 2x damage","&7against Lasagnaughts","&8Lasts 30s","","&7Once skill activation ends, bonus &aexp &7is awarded");
+
     //more
     //public static SlimefunItemStack = new SlimefunItemStack("",Material.,"","");
-
 
 }
