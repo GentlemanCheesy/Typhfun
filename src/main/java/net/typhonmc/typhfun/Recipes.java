@@ -42,7 +42,7 @@ public class Recipes {
             null,                                 new ItemStack(Material.COPPER_INGOT), new ItemStack(Material.COPPER_INGOT),
             new ItemStack(Material.COPPER_INGOT), null,                                 null
     };
-    public static ItemStack[] VEXAL_PIPE = {
+    public static ItemStack[] GREEN_VEXAL_PIPE = {
             new ItemStack(Material.TINTED_GLASS), new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.TINTED_GLASS),
             new ItemStack(Material.TINTED_GLASS), Items.GREEN_WARP_PIPE,                  new ItemStack(Material.TINTED_GLASS),
             new ItemStack(Material.TINTED_GLASS), new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.TINTED_GLASS)
@@ -227,19 +227,65 @@ public class Recipes {
             null,                        new ItemStack(Material.TNT), null
     };
     public static ItemStack[] LASAGNA = {
-            null, null,                                                                                                      null,
+            null, null,                                                                                      null,
             null, getCustomItem(Material.PLAYER_HEAD, format("<gradient:#FFAA00:#FFFF55>Lasagnaught"),"4-8"), null,
-            null, null,                                                                                                       null
+            null, null,                                                                                        null
     };
     public static ItemStack[] IMPASTA = {
-            null, null,                                                                                                       null,
+            null, null,                                                                                       null,
             null, getCustomItem(Material.PLAYER_HEAD, format("<gradient:#FFAA00:#FFFF55>Lasagnaught"),"2.5%"), null,
-            null, null,                                                                                                        null
+            null, null,                                                                                        null
     };
     public static ItemStack[] LINGUINE_LANCE = {
-            null, null,                                                                                                     null,
+            null, null,                                                                                     null,
             null, getCustomItem(Material.PLAYER_HEAD, format("<gradient:#FFAA00:#FFFF55>Lasagnaught"),"5%"), null,
-            null, null,                                                                                                      null
+            null, null,                                                                                       null
+    };
+
+    public static ItemStack[] PASTA_POWER = {
+            null, null,                                                                                     null,
+            null, getCustomItem(Material.PLAYER_HEAD, format("<gradient:#FFAA00:#FFFF55>Lasagnaught"),"5%"), null,
+            null, null,                                                                                       null
+    };
+    public static ItemStack[] PASTAXE = {
+        null, null,                                                                                       null,
+        null, getCustomItem(Material.PLAYER_HEAD, format("<gradient:#FFAA00:#FFFF55>Lasagnaught"),"2.5%"), null,
+        null, null,                                                                                         null
+    };
+    public static ItemStack[] SAUCE_SPADE = {
+        null, null,                                                                                     null,
+        null, getCustomItem(Material.PLAYER_HEAD, format("<gradient:#FFAA00:#FFFF55>Lasagnaught"),"5%"), null,
+        null, null,                                                                                       null
+    };
+    public static ItemStack[] INFINIBURNER = {
+            getById("STEEL_THRUSTER").getItem(), getById("STEEL_THRUSTER").getItem(),         getById("STEEL_THRUSTER").getItem(),
+            getById("ANCIENT_RUNE_SOULBOUND").getItem(), getById("MAGNESIUM_DUST").getItem(), getById("ANCIENT_RUNE_SOULBOUND").getItem(),
+            getById("STEEL_THRUSTER").getItem(), getById("STEEL_THRUSTER").getItem(),         getById("STEEL_THRUSTER").getItem()
+    };
+    public static ItemStack[] PRISMATIC_DRAGON_WINGS = {
+            new ItemStack(Material.RED_DYE),    new ItemStack(Material.YELLOW_DYE), new ItemStack(Material.LIME_DYE),
+            new ItemStack(Material.PURPLE_DYE), new ItemStack(Material.ELYTRA),     new ItemStack(Material.LIGHT_BLUE_DYE),
+            getById("MAGIC_SUGAR").getItem(),   Items.PRISTINE_PRISM,               getById("MAGIC_SUGAR").getItem()
+    };
+    public static ItemStack[] WHITE_WARP_PIPE = {
+            new ItemStack(Material.WHITE_CONCRETE), null,                                    new ItemStack(Material.WHITE_CONCRETE),
+            new ItemStack(Material.WHITE_CONCRETE), getById("ANCIENT_RUNE_ENDER").getItem(), new ItemStack(Material.WHITE_CONCRETE),
+            new ItemStack(Material.WHITE_CONCRETE), getById("SYNTHETIC_EMERALD").getItem(),  new ItemStack(Material.WHITE_CONCRETE)
+    };
+    public static ItemStack[] RED_WARP_PIPE = {
+            new ItemStack(Material.RED_CONCRETE), null,                                    new ItemStack(Material.RED_CONCRETE),
+            new ItemStack(Material.RED_CONCRETE), getById("ANCIENT_RUNE_ENDER").getItem(), new ItemStack(Material.RED_CONCRETE),
+            new ItemStack(Material.RED_CONCRETE), getById("SYNTHETIC_EMERALD").getItem(),  new ItemStack(Material.RED_CONCRETE)
+    };
+    public static ItemStack[] CYAN_WARP_PIPE = {
+            new ItemStack(Material.CYAN_CONCRETE), null,                                    new ItemStack(Material.CYAN_CONCRETE),
+            new ItemStack(Material.CYAN_CONCRETE), getById("ANCIENT_RUNE_ENDER").getItem(), new ItemStack(Material.CYAN_CONCRETE),
+            new ItemStack(Material.CYAN_CONCRETE), getById("SYNTHETIC_EMERALD").getItem(),  new ItemStack(Material.CYAN_CONCRETE)
+    };
+    public static ItemStack[] WHITE_VEXAL_PIPE = {
+            new ItemStack(Material.TINTED_GLASS), new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.TINTED_GLASS),
+            new ItemStack(Material.TINTED_GLASS), Items.WHITE_WARP_PIPE,                  new ItemStack(Material.TINTED_GLASS),
+            new ItemStack(Material.TINTED_GLASS), new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.TINTED_GLASS)
     };
 
     //more here

@@ -45,7 +45,7 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.VEXAL_VEIL, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.VEXAL_VEIL, new SlimefunItemStack(Items.VEXAL_VEIL, 8) ).register(this);
             new SlimefunItem(cheesy_bites, Items.GREEN_WARP_PIPE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.GREEN_WARP_PIPE, new SlimefunItemStack(Items.GREEN_WARP_PIPE, 2) ).register(this);
             new SlimefunItem(cheesy_bites, Items.WRENCH_OF_WARPING, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.WRENCH_OF_WARPING).register(this);
-            new SlimefunItem(cheesy_bites, Items.VEXAL_PIPE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.VEXAL_PIPE, new SlimefunItemStack(Items.VEXAL_PIPE, 32) ).register(this);
+            new SlimefunItem(cheesy_bites, Items.GREEN_VEXAL_PIPE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.GREEN_VEXAL_PIPE, new SlimefunItemStack(Items.GREEN_VEXAL_PIPE, 32) ).register(this);
             new SlimefunItem(cheesy_bites, Items.DISPLAY_CASE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.DISPLAY_CASE).register(this);
             new SlimefunItem(cheesy_bites, Items.SLIME_BUCKET, RecipeType.NULL, Recipes.SLIME_BUCKET).register(this); //RecipeType.INTERACT has Maven-related bug
 
@@ -88,6 +88,16 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.LASAGNA, RecipeType.NULL, Recipes.LASAGNA).register(this); //<--- RecipeType.CUSTOM_MOB_DROP
             new SlimefunItem(cheesy_bites, Items.IMPASTA, RecipeType.NULL, Recipes.IMPASTA, new SlimefunItemStack(Items.IMPASTA, 6) ).register(this); //<--- RecipeType.CUSTOM_MOB_DROP
             new SlimefunItem(cheesy_bites, Items.LINGUINE_LANCE, RecipeType.NULL, Recipes.LINGUINE_LANCE).register(this); //<--- RecipeType.CUSTOM_MOB_DROP
+
+            new SlimefunItem(cheesy_bites, Items.PASTA_POWER, RecipeType.NULL, Recipes.PASTA_POWER).register(this); //<--- RecipeType.CUSTOM_MOB_DROP
+            new SlimefunItem(cheesy_bites, Items.PASTAXE, RecipeType.NULL, Recipes.PASTAXE).register(this); //<--- RecipeType.CUSTOM_MOB_DROP
+            new SlimefunItem(cheesy_bites, Items.SAUCE_SPADE, RecipeType.NULL, Recipes.SAUCE_SPADE).register(this); //<--- RecipeType.CUSTOM_MOB_DROP
+            new SlimefunItem(cheesy_bites, Items.INFINIBURNER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.INFINIBURNER).register(this);
+            new SlimefunItem(cheesy_bites, Items.PRISMATIC_DRAGON_WINGS, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.PRISMATIC_DRAGON_WINGS).register(this);
+            new SlimefunItem(cheesy_bites, Items.WHITE_WARP_PIPE, RecipeType.MAGIC_WORKBENCH, Recipes.WHITE_WARP_PIPE).register(this);
+            new SlimefunItem(cheesy_bites, Items.RED_WARP_PIPE, RecipeType.MAGIC_WORKBENCH, Recipes.RED_WARP_PIPE).register(this);
+            new SlimefunItem(cheesy_bites, Items.CYAN_WARP_PIPE, RecipeType.MAGIC_WORKBENCH, Recipes.CYAN_WARP_PIPE).register(this);
+            new SlimefunItem(cheesy_bites, Items.WHITE_VEXAL_PIPE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.WHITE_VEXAL_PIPE).register(this);
 
             //more
             //new SlimefunItem(cheesy_bites, Items., RecipeType., Recipes.).register(this);
