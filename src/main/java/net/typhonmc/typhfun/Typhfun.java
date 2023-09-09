@@ -20,6 +20,7 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
     //private final RecipeType RECIPETYPE_DRINK_MIXER = ?
     //private final RecipeType RECIPETYPE_SMITHING_PRESS = ?
     //private final RecipeType CUSTOM_MOB_DROP = ?
+    //private final RecipeType OXIDIZER = ?
 
     @Override
     public void onEnable() {
@@ -98,6 +99,16 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.RED_WARP_PIPE, RecipeType.MAGIC_WORKBENCH, Recipes.RED_WARP_PIPE).register(this);
             new SlimefunItem(cheesy_bites, Items.CYAN_WARP_PIPE, RecipeType.MAGIC_WORKBENCH, Recipes.CYAN_WARP_PIPE).register(this);
             new SlimefunItem(cheesy_bites, Items.WHITE_VEXAL_PIPE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.WHITE_VEXAL_PIPE).register(this);
+
+            new SlimefunItem(cheesy_bites, Items.RED_VEXAL_PIPE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.RED_VEXAL_PIPE).register(this);
+            new SlimefunItem(cheesy_bites, Items.CYAN_VEXAL_PIPE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.CYAN_VEXAL_PIPE).register(this);
+            new SlimefunItem(cheesy_bites, Items.VEXAL_CORK, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.VEXAL_CORK).register(this);
+            new SlimefunItem(cheesy_bites, Items.MYSTICAL_PATINA, RecipeType.NULL, Recipes.MYSTICAL_PATINA).register(this); //<--- RecipeType.OXIDIZER
+            new SlimefunItem(cheesy_bites, Items.SCALDING_STAFF, RecipeType.NULL, Recipes.SCALDING_STAFF).register(this); // <--- RecipeType.SMITHING_PRESS
+            new SlimefunItem(cheesy_bites, Items.FLUTE_OF_WARPING, RecipeType.NULL, Recipes.FLUTE_OF_WARPING).register(this); // <--- RecipeType.SMITHING_PRESS
+            new SlimefunItem(cheesy_bites, Items.SHOCK_SHIELD, RecipeType.NULL, Recipes.SHOCK_SHIELD).register(this); // <--- RecipeType.SMITHING_PRESS
+            new SlimefunItem(cheesy_bites, Items.MINE_SWEEPER, RecipeType.MAGIC_WORKBENCH, Recipes.MINE_SWEEPER).register(this);
+            new SlimefunItem(cheesy_bites, Items.SCULK_SPINE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SCULK_SPINE).register(this);
 
             //more
             //new SlimefunItem(cheesy_bites, Items., RecipeType., Recipes.).register(this);

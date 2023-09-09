@@ -288,6 +288,52 @@ public class Recipes {
             new ItemStack(Material.TINTED_GLASS), new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.TINTED_GLASS)
     };
 
+    public static ItemStack[] RED_VEXAL_PIPE = {
+            new ItemStack(Material.TINTED_GLASS), new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.TINTED_GLASS),
+            new ItemStack(Material.TINTED_GLASS), Items.RED_WARP_PIPE,                    new ItemStack(Material.TINTED_GLASS),
+            new ItemStack(Material.TINTED_GLASS), new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.TINTED_GLASS)
+    };
+    public static ItemStack[] CYAN_VEXAL_PIPE = {
+            new ItemStack(Material.TINTED_GLASS), new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.TINTED_GLASS),
+            new ItemStack(Material.TINTED_GLASS), Items.CYAN_WARP_PIPE,                   new ItemStack(Material.TINTED_GLASS),
+            new ItemStack(Material.TINTED_GLASS), new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.TINTED_GLASS)
+    };
+    public static ItemStack[] VEXAL_CORK = {
+            new ItemStack(Material.MANGROVE_PLANKS), null, new ItemStack(Material.MANGROVE_PLANKS),
+            Items.MYSTICAL_PATINA, Items.REDSTONE_ACTIVATION_MOD, Items.MYSTICAL_PATINA,
+            new ItemStack(Material.MANGROVE_PLANKS), getById("REDSTONE_ALLOY").getItem(), new ItemStack(Material.MANGROVE_PLANKS)
+    };
+    public static ItemStack[] MYSTICAL_PATINA = {
+            null, null,                                     null,
+            null, new ItemStack(Material.WEATHERED_COPPER), null,
+            null, null,                                     null
+    };
+    public static ItemStack[] SCALDING_STAFF = {
+            new ItemStack(Items.MYSTICAL_PATINA.getType(), 10), Items.SPONGE_STAFF, null,
+            null,                                                       null,               null,
+            null,                                                       null,               null
+    };
+    public static ItemStack[] FLUTE_OF_WARPING = {
+            new ItemStack(Items.MYSTICAL_PATINA.getType(), 10), Items.INFUSED_FLUTE, null,
+            null,                                                       null,                null,
+            null,                                                       null,                null
+    };
+    public static ItemStack[] SHOCK_SHIELD = {
+            new ItemStack(Items.MYSTICAL_PATINA.getType(), 10), new ItemStack(Material.SHIELD), null,
+            null,                                                       null,                           null,
+            null,                                                       null,                           null
+    };
+    public static ItemStack[] MINE_SWEEPER = {
+            new ItemStack(Material.PISTON),          new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.PISTON),
+            Items.MYSTICAL_PATINA,                   new ItemStack(Material.DIAMOND_SWORD),  Items.MYSTICAL_PATINA,
+            new ItemStack(Material.NETHERITE_SCRAP), new ItemStack(Material.AMETHYST_SHARD), new ItemStack(Material.NETHERITE_SCRAP)
+    };
+    public static ItemStack[] SCULK_SPINE = {
+            new ItemStack(Material.SCULK), new ItemStack(Material.SCULK),      new ItemStack(Material.SCULK),
+            new ItemStack(Material.SCULK), new ItemStack(Material.BONE_BLOCK), new ItemStack(Material.SCULK),
+            new ItemStack(Material.SCULK), new ItemStack(Material.SCULK),      new ItemStack(Material.SCULK)
+    };
+
     //more here
 
     private static ItemStack getCustomItem(Material appearance, String name, String... lores) {

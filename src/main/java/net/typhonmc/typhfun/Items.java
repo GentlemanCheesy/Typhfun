@@ -83,9 +83,21 @@ public class Items {
     public static SlimefunItemStack WHITE_WARP_PIPE = new SlimefunItemStack("WHITE_WARP_PIPE", Material.PLAYER_HEAD, "&fWarp Pipe", "&7Teleports you to another discovered","&fwhite&7 warp pipe in your current dimension.");
     public static SlimefunItemStack RED_WARP_PIPE = new SlimefunItemStack("RED_WARP_PIPE", Material.PLAYER_HEAD, "&4Warp Pipe", "&7Teleports you to another discovered","&4red&7 warp pipe in your current dimension.");
     public static SlimefunItemStack CYAN_WARP_PIPE = new SlimefunItemStack("CYAN_WARP_PIPE", Material.PLAYER_HEAD, "&3Warp Pipe", "&7Teleports you to another discovered","&3cyan&7 warp pipe in your current dimension.");
-    public static SlimefunItemStack WHITE_VEXAL_PIPE = new SlimefunItemStack("WHITE_VEXAL_PIPE",Material.WHITE_STAINED_GLASS,"&fVexal Pipe","","&7Teleports players from one end to another,","&7if multiple ends are present, a random one is chosen");
+    public static SlimefunItemStack WHITE_VEXAL_PIPE = new SlimefunItemStack("WHITE_VEXAL_PIPE",Material.WHITE_STAINED_GLASS,"&fVexal Pipe","&7Teleports players from one end to another,","&7if multiple ends are present, a random one is chosen");
+
+    public static SlimefunItemStack RED_VEXAL_PIPE = new SlimefunItemStack("RED_VEXAL_PIPE",Material.RED_STAINED_GLASS,"&4Vexal Pipe","&7Teleports players from one end to another,","&7if multiple ends are present, a random one is chosen");
+    public static SlimefunItemStack CYAN_VEXAL_PIPE = new SlimefunItemStack("CYAN_VEXAL_PIPE",Material.CYAN_STAINED_GLASS,"&3Vexal Pipe","&7Teleports players from one end to another,","&7if multiple ends are present, a random one is chosen");
+    public static SlimefunItemStack VEXAL_CORK = new SlimefunItemStack("VEXAL_CORK",Material.MANGROVE_PLANKS,"&fVexal Cork","&7When next to a Vexal Pipe end","&7and powered by &credstone&7,","&7disables the pipe end-point");
+    public static SlimefunItemStack MYSTICAL_PATINA = new SlimefunItemStack("MYSTICAL_PATINA",Material.PRISMARINE_CRYSTALS,format("<gradient:#55FF55:#55FFFF>Mystical Patina"),"&8Crafting Material");
+    public static SlimefunItemStack SCALDING_STAFF = new SlimefunItemStack("SCALDING_STAFF",Material.BLAZE_ROD,format("<gradient:#FF0000:#FFAA00>Scalding Staff"),"&f0/1 Buckets Filled","","&6Item Ability&7: &6Absorption","&aRight Click&7 on a water source to store in staffs' buckets","","&6Item Ability&7: &6Jet Propulsion","&aLeft Click&7 to place stored water","","&6Item Ability&7: &4Modular Storage","&7Place a bucket onto staff to increase storage by one.","&8(Compatible with Fluid Tanks)");
+    public static SlimefunItemStack FLUTE_OF_WARPING = new SlimefunItemStack("FLUTE_OF_WARPING",Material.BAMBOO,"&aFlute of Warping","","&6Item Ability&7: &6Super Tune","&7Play the correct tune to","&7any random, visited, warp-pipe","&8(10m cooldown)");
+    public static SlimefunItemStack SHOCK_SHIELD = new SlimefunItemStack("SHOCK_SHIELD",Material.SHIELD,"&fShock Shield","","&6Item Ability&7: &fShock Absorption","&aRight Click to store attacks as CC","","&6Item Ability&7: &fSelf-Repair","&aSneak&7 to use stored CC for shield repair","","&70/800 CC");
+    public static SlimefunItemStack MINE_SWEEPER = new SlimefunItemStack("MINE_SWEEPER",Material.DIAMOND_SWORD,format("<gradient:#55FF55:#55FFFF>Mine Sweeper"),"&7Damage: &c+9","","&6Item Ability&7: "+format("<gradient:#55FF55:#55FFFF>Target Lock"),"&7Mobs hit by sweep will fly further","&7Compatible with Sweeping Edge and Knockback");
+    public static SlimefunItemStack SCULK_SPINE = new SlimefunItemStack("SCULK_SPINE",Material.BONE_BLOCK,"&3Sculk Spine","&7Record songs onto Echo Shards","","&7Start recording with &credstone &7power","&7Records nearby (100m) note-blocks");
 
     //more
     //public static SlimefunItemStack = new SlimefunItemStack("",Material.,"","");
+
+    public static SlimefunItemStack REDSTONE_ACTIVATION_MOD = new SlimefunItemStack("REDSTONE_ACTIVATION_MOD",Material.COMPARATOR,"&cRedstone Activation &7Mod","&7Changes machine to only be active when","&7powered by &credstone");
 
 }
