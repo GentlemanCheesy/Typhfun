@@ -21,6 +21,7 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
     //private final RecipeType RECIPETYPE_SMITHING_PRESS = ?
     //private final RecipeType CUSTOM_MOB_DROP = ?
     //private final RecipeType OXIDIZER = ?
+    //private final RecipeType STRUCTURE_LOOT = ?
 
     @Override
     public void onEnable() {
@@ -70,7 +71,7 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.SPIKED_HONEY, RecipeType.NULL, Recipes.SPIKED_HONEY).register(this); // <--- RecipeType.DRINK_MIXER
             new SlimefunItem(cheesy_bites, Items.PRISTINE_PRISMARINE_SHARD, RecipeType.MOB_DROP, Recipes.PRISTINE_PRISMARINE_SHARD).register(this);
 
-            new SlimefunItem(cheesy_bites, Items.PRISTINE_PRISM, RecipeType.MAGIC_WORKBENCH, Recipes.PRISTINE_PRISM).register(this);
+            new SlimefunItem(cheesy_bites, Items.PRISMARINE_PRISM, RecipeType.MAGIC_WORKBENCH, Recipes.PRISMARINE_PRISM).register(this);
             new SlimefunItem(cheesy_bites, Items.PRISM_PICKAXE, RecipeType.MAGIC_WORKBENCH, Recipes.PRISM_PICKAXE).register(this);
             new SlimefunItem(cheesy_bites, Items.PRISM_SHOVEL, RecipeType.MAGIC_WORKBENCH, Recipes.PRISM_SHOVEL).register(this);
             new SlimefunItem(cheesy_bites, Items.MIRROR_BLADE, RecipeType.MAGIC_WORKBENCH, Recipes.MIRROR_BLADE).register(this);
@@ -110,11 +111,21 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.MINE_SWEEPER, RecipeType.MAGIC_WORKBENCH, Recipes.MINE_SWEEPER).register(this);
             new SlimefunItem(cheesy_bites, Items.SCULK_SPINE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SCULK_SPINE).register(this);
 
+            new SlimefunItem(cheesy_bites, Items.SCULK_BOX, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SCULK_BOX).register(this);
+            new SlimefunItem(cheesy_bites, Items.EXPERIMENT_116, RecipeType.NULL, Recipes.EXPERIMENT_116).register(this); // <--- RecipeType.STRUCTURE_LOOT
+            new SlimefunItem(cheesy_bites, Items.HISSING_FELT, RecipeType.NULL, Recipes.HISSING_FELT).register(this); // <--- RecipeType.CUSTOM_MOB_DROP
+            new SlimefunItem(cheesy_bites, Items.WONDER_PIPE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.WONDER_PIPE).register(this);
+            new SlimefunItem(cheesy_bites, Items.PRISM_AXE, RecipeType.MAGIC_WORKBENCH, Recipes.PRISM_AXE).register(this);
+            new SlimefunItem(cheesy_bites, Items.PRISM_HOE, RecipeType.MAGIC_WORKBENCH, Recipes.PRISM_HOE).register(this);
+            new SlimefunItem(cheesy_bites, Items.PRISM_BREAKER, RecipeType.MAGIC_WORKBENCH, Recipes.PRISM_BREAKER).register(this);
+            new SlimefunItem(cheesy_bites, Items.NETHERITE_MULTITOOL, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.NETHERITE_MULTITOOL).register(this);
+            new SlimefunItem(cheesy_bites, Items.PAINTERS_PALLET, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.PAINTERS_PALLET).register(this);
+        }
+        /*Cheesy Power*/ {
+
             //more
             //new SlimefunItem(cheesy_bites, Items., RecipeType., Recipes.).register(this);
 
-        }
-        /*Cheesy Power*/ {
         }
         /*Cheesy Events*/ {
         }

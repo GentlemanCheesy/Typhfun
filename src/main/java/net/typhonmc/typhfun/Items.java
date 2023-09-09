@@ -55,7 +55,7 @@ public class Items {
     public static SlimefunItemStack SPIKED_HONEY = new SlimefunItemStack("SPIKED_HONEY",Material.HONEY_BOTTLE,"&cSpiked Honey","","&6Item Ability&7: &cSpiked","&7This drink is spiked with potion effects,","&7effects apply when drank.");
     public static SlimefunItemStack PRISTINE_PRISMARINE_SHARD = new SlimefunItemStack("PRISTINE_PRISMARINE_SHARD",Material.PRISMARINE_SHARD,format("<gradient:#55FFFF:#FFFFFF:#FF5555>Pristine Prismarine Shard"),"&7So pure, it reflects!");
 
-    public static SlimefunItemStack PRISTINE_PRISM = new SlimefunItemStack("PRISTINE_PRISM",Material.PRISMARINE_SHARD,format("<gradient:#FF55FF:#FFFF55>Pristine Prism"),"&8Crafting Material");
+    public static SlimefunItemStack PRISMARINE_PRISM = new SlimefunItemStack("PRISMARINE_PRISM",Material.PRISMARINE_SHARD,format("<gradient:#FF55FF:#FFFF55>Prismarine Prism"),"&8Crafting Material");
     public static SlimefunItemStack PRISM_PICKAXE = new SlimefunItemStack("PRISM_PICKAXE",Material.DIAMOND_PICKAXE,format("<gradient:#0000AA:#FFFFFF:#AA0000>Prism Pickaxe"),"","&6Mining Ability&7: &bBeam Breaker","&750% chance to break adjacent blocks");
     public static SlimefunItemStack PRISM_SHOVEL = new SlimefunItemStack("PRISM_SHOVEL",Material.DIAMOND_SHOVEL,format("<gradient:#AA0000:#FFFFFF:#AA00AA>Prism Shovel"),"","&6Mining Ability&7: &bBeam Breaker","&750% chance to break adjacent blocks");
     public static SlimefunItemStack MIRROR_BLADE = new SlimefunItemStack("MIRROR_BLADE",Material.IRON_SWORD,format("<gradient:#00AAAA:#55FFFF>Mirror Blade"),"&7Damage: &c+1","","&6Item Ability&7: &bMirrored","&7Permanently mirrors the properties of","&7the first sword it contacts.","&8Swap, in inventory, to mirror.");
@@ -93,7 +93,18 @@ public class Items {
     public static SlimefunItemStack FLUTE_OF_WARPING = new SlimefunItemStack("FLUTE_OF_WARPING",Material.BAMBOO,"&aFlute of Warping","","&6Item Ability&7: &6Super Tune","&7Play the correct tune to","&7any random, visited, warp-pipe","&8(10m cooldown)");
     public static SlimefunItemStack SHOCK_SHIELD = new SlimefunItemStack("SHOCK_SHIELD",Material.SHIELD,"&fShock Shield","","&6Item Ability&7: &fShock Absorption","&aRight Click to store attacks as CC","","&6Item Ability&7: &fSelf-Repair","&aSneak&7 to use stored CC for shield repair","","&70/800 CC");
     public static SlimefunItemStack MINE_SWEEPER = new SlimefunItemStack("MINE_SWEEPER",Material.DIAMOND_SWORD,format("<gradient:#55FF55:#55FFFF>Mine Sweeper"),"&7Damage: &c+9","","&6Item Ability&7: "+format("<gradient:#55FF55:#55FFFF>Target Lock"),"&7Mobs hit by sweep will fly further","&7Compatible with Sweeping Edge and Knockback");
-    public static SlimefunItemStack SCULK_SPINE = new SlimefunItemStack("SCULK_SPINE",Material.BONE_BLOCK,"&3Sculk Spine","&7Record songs onto Echo Shards","","&7Start recording with &credstone &7power","&7Records nearby (100m) note-blocks");
+    public static SlimefunItemStack SCULK_SPINE = new SlimefunItemStack("SCULK_SPINE",Material.BONE_BLOCK,"&3Sculk Spine","&7Record songs onto Echo Shards","","&7Start recording with &credstone &7power","&7Records nearby note-blocks","&8(100m radius)");
+
+    public static SlimefunItemStack SCULK_BOX = new SlimefunItemStack("SCULK_BOX",Material.NOTE_BLOCK,"&3Sculk Box","&aRight Click &7with an Eteched Echo Shard,","&7to play the record.","","&7When powered by &credstone,","&7the record will repeat.","","&8(48m radius)");
+    public static SlimefunItemStack EXPERIMENT_116 = new SlimefunItemStack("EXPERIMENT_116",Material.BREAD,"&fExperiment 116","","&6Item Ability&7: &fEchos of Twilight","&7When consumed, gives","&7Sonic Boom immunity for 60s");
+    public static SlimefunItemStack HISSING_FELT = new SlimefunItemStack("HISSING_FELT",Material.PLAYER_HEAD,format("<gradient:#00AA00:#005D5D>Hissing Felt"),"&8Crafting Material");
+    public static SlimefunItemStack WONDER_PIPE = new SlimefunItemStack("WONDER_PIPE",Material.PLAYER_HEAD,"&fWonder Pipe","&7Teleports you to a random pipe","&7in any dimension");
+    public static SlimefunItemStack PRISM_AXE = new SlimefunItemStack("PRISM_AXE",Material.DIAMOND_AXE,format("<gradient:#55FF55:#FFFFFF:#5555FF>Prism Axe"),"","&6Mining Ability&7: &bBeam Breaker","&750% chance to break adjacent blocks");
+    public static SlimefunItemStack PRISM_HOE = new SlimefunItemStack("PRISM_HOE",Material.DIAMOND_HOE,format("<gradient:#00AA00:#FFFFFF:#00FF00>Prism Hoe"),"","&6Mining Ability&7: &bBeam Breaker","&750% chance to break adjacent blocks");
+    public static SlimefunItemStack PRISM_BREAKER = new SlimefunItemStack("PRISM_BREAKER",Material.NETHERITE_HOE,format("<gradient:#AA00AA:#FFFFFF:#55FF55>Prism Breaker"),"","&6Mining Ability&7: &bBeam Breaker","&780% chance to break adjacent blocks");
+    public static SlimefunItemStack NETHERITE_MULTITOOL = new SlimefunItemStack("NETHERITE_MULTITOOL",Material.NETHERITE_PICKAXE,"&fNetherite Multitool","","&6Item Ability&7: &fMultitasker","&aRight Click&7 to morph tool","&7into clicked-block appropriate tool","","&6Mining Ability&7: &bBeam Breaker","&780% chance to break adjacent blocks","","&8From crafting, tools keep enchants when used");
+    public static SlimefunItemStack PAINTERS_PALLET = new SlimefunItemStack("PAINTERS_PALLET",Material.LEATHER_HORSE_ARMOR,"&fPainters' Pallet","&7Can be dyed","","&aRight Clicking&7 a painters block will","&7paint it the dyed color");
+
 
     //more
     //public static SlimefunItemStack = new SlimefunItemStack("",Material.,"","");

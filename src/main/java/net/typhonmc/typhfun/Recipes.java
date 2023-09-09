@@ -150,25 +150,25 @@ public class Recipes {
             null, null,                                                              null
     };
 
-    public static ItemStack[] PRISTINE_PRISM = {
+    public static ItemStack[] PRISMARINE_PRISM = {
             null,                            Items.PRISTINE_PRISMARINE_SHARD,      null,
             Items.PRISTINE_PRISMARINE_SHARD, new ItemStack(Material.TINTED_GLASS), Items.PRISTINE_PRISMARINE_SHARD,
             null,                            Items.PRISTINE_PRISMARINE_SHARD,      null
     };
     public static ItemStack[] PRISM_PICKAXE = {
-            getById("HARDENED_GLASS").getItem(), Items.PRISTINE_PRISM,             getById("HARDENED_GLASS").getItem(),
+            getById("HARDENED_GLASS").getItem(), Items.PRISMARINE_PRISM,             getById("HARDENED_GLASS").getItem(),
             null,                                getById("GILDED_IRON").getItem(), null,
             null,                                getById("GILDED_IRON").getItem(), null
     };
     public static ItemStack[] PRISM_SHOVEL = {
-            null, Items.PRISTINE_PRISM,             null,
+            null, Items.PRISMARINE_PRISM,             null,
             null, getById("GILDED_IRON").getItem(), null,
             null, getById("GILDED_IRON").getItem(), null
     };
     public static ItemStack[] MIRROR_BLADE = {
             null, getById("HARDENED_GLASS").getItem(), null,
             null, getById("HARDENED_GLASS").getItem(), null,
-            null, Items.PRISTINE_PRISM,                null
+            null, Items.PRISMARINE_PRISM,                null
     };
     public static ItemStack[] HURRICANE_BLASTER = {
             null,                                Items.PRISTINE_PRISMARINE_SHARD,         null,
@@ -265,7 +265,7 @@ public class Recipes {
     public static ItemStack[] PRISMATIC_DRAGON_WINGS = {
             new ItemStack(Material.RED_DYE),    new ItemStack(Material.YELLOW_DYE), new ItemStack(Material.LIME_DYE),
             new ItemStack(Material.PURPLE_DYE), new ItemStack(Material.ELYTRA),     new ItemStack(Material.LIGHT_BLUE_DYE),
-            getById("MAGIC_SUGAR").getItem(),   Items.PRISTINE_PRISM,               getById("MAGIC_SUGAR").getItem()
+            getById("MAGIC_SUGAR").getItem(),   Items.PRISMARINE_PRISM,             getById("MAGIC_SUGAR").getItem()
     };
     public static ItemStack[] WHITE_WARP_PIPE = {
             new ItemStack(Material.WHITE_CONCRETE), null,                                    new ItemStack(Material.WHITE_CONCRETE),
@@ -332,6 +332,52 @@ public class Recipes {
             new ItemStack(Material.SCULK), new ItemStack(Material.SCULK),      new ItemStack(Material.SCULK),
             new ItemStack(Material.SCULK), new ItemStack(Material.BONE_BLOCK), new ItemStack(Material.SCULK),
             new ItemStack(Material.SCULK), new ItemStack(Material.SCULK),      new ItemStack(Material.SCULK)
+    };
+
+    public static ItemStack[] SCULK_BOX = {
+            null,                               new ItemStack(Material.ECHO_SHARD), null,
+            new ItemStack(Material.ECHO_SHARD), new ItemStack(Material.JUKEBOX),    new ItemStack(Material.ECHO_SHARD),
+            null,                               new ItemStack(Material.ECHO_SHARD), null
+    };
+    public static ItemStack[] EXPERIMENT_116 = {
+            null, null,                                               null,
+            null, getCustomItem(Material.CHEST,"Ancient City"), null,
+            null, null,                                               null
+    };
+    public static ItemStack[] HISSING_FELT = {
+            null, null, null,
+            null, getCustomItem(Material.PLAYER_HEAD, "Charged Creeper","2%"), null,
+            null, null, null
+    };
+    public static ItemStack[] WONDER_PIPE = {
+            null,                Items.GREEN_WARP_PIPE, null,
+            Items.RED_WARP_PIPE, Items.HISSING_FELT,    Items.WHITE_WARP_PIPE,
+            null,                Items.CYAN_WARP_PIPE,  null
+    };
+    public static ItemStack[] PRISM_AXE = {
+            Items.PRISMARINE_PRISM,              getById("HARDENED_GLASS").getItem(), null,
+            getById("HARDENED_GLASS").getItem(), getById("GILDED_IRON").getItem(),    null,
+            null,                                getById("GILDED_IRON").getItem(),    null
+    };
+    public static ItemStack[] PRISM_HOE = {
+            Items.PRISMARINE_PRISM, getById("HARDENED_GLASS").getItem(), null,
+            null,                   getById("GILDED_IRON").getItem(),    null,
+            null,                   getById("GILDED_IRON").getItem(),    null
+    };
+    public static ItemStack[] PRISM_BREAKER = {
+            null,               Items.PRISM_PICKAXE, null,
+            Items.PRISM_SHOVEL, Items.HISSING_FELT,  Items.PRISM_AXE,
+            null,               Items.PRISM_HOE,     null
+    };
+    public static ItemStack[] NETHERITE_MULTITOOL = {
+            null,                                     new ItemStack(Material.NETHERITE_PICKAXE), null,
+            new ItemStack(Material.NETHERITE_SHOVEL), Items.HISSING_FELT,                        new ItemStack(Material.NETHERITE_AXE),
+            null,                                     new ItemStack(Material.NETHERITE_HOE),     null
+    };
+    public static ItemStack[] PAINTERS_PALLET = {
+            null,                            new ItemStack(Material.CALCITE), null,
+            new ItemStack(Material.CALCITE), new ItemStack(Material.LEATHER), new ItemStack(Material.CALCITE),
+            null,                            new ItemStack(Material.CALCITE), null
     };
 
     //more here
