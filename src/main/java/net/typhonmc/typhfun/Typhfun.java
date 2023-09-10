@@ -122,9 +122,18 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_bites, Items.PAINTERS_PALLET, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.PAINTERS_PALLET).register(this);
         }
         /*Cheesy Power*/ {
+            new SlimefunItem(cheesy_power, Items.POWER_BANK_I, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.POWER_BANK_I).register(this);
+            new SlimefunItem(cheesy_power, Items.POWER_BANK_II, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.POWER_BANK_II).register(this);
+            new SlimefunItem(cheesy_power, Items.SEARING_ENGINE, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SEARING_ENGINE).register(this);
+            new SlimefunItem(cheesy_power, Items.TIDE_POOL_GENERATOR, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.TIDE_POOL_GENERATOR).register(this);
+            new SlimefunItem(cheesy_power, Items.MOSS_MANAGER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.MOSS_MANAGER).register(this);
+            new SlimefunItem(cheesy_power, Items.RAINBOW_DYNAMO, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.RAINBOW_DYNAMO).register(this);
+            new SlimefunItem(cheesy_power, Items.DRINK_BLENDER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.DRINK_BLENDER).register(this);
+            new SlimefunItem(cheesy_power, Items.JUICE_PRESS, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.JUICE_PRESS).register(this);
+            new SlimefunItem(cheesy_power, Items.SMOOTHIE_MAKER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SMOOTHIE_MAKER).register(this);
 
             //more
-            //new SlimefunItem(cheesy_bites, Items., RecipeType., Recipes.).register(this);
+            //new SlimefunItem(cheesy_power, Items., RecipeType., Recipes.).register(this);
 
         }
         /*Cheesy Events*/ {

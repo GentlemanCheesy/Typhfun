@@ -11,10 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Items {
-    //Credit to Apeiros from [AlchimiaVitae](https://github.com/Apeiros-46B/AlchimiaVitae) for MiniMessage, LegacyComponentSerializer, and format()
+    //Credit to Apeiros from [AlchimiaVitae](https://github.com/Apeiros-46B/AlchimiaVitae) for MiniMessage (modified), LegacyComponentSerializer, and format()
     private static final MiniMessage MINI_MESSAGE = MiniMessage.builder()
             .tags(  TagResolver.builder()
                     .resolver( StandardTags.color() )
+                    .resolver( StandardTags.rainbow() )
                     .resolver( StandardTags.decorations() )
                     .resolver( StandardTags.gradient() )
                     .resolver( StandardTags.reset() )
@@ -84,10 +85,10 @@ public class Items {
 
         return "";
     }
+    private static final int MAX_LENGTH = 35;
     private static String[] fixLore(boolean seperate, String... lores) {
         final char[] modifiers = new char[]{'k','l','m','n','o','r'};
         final char[] colors = new char[]{'x','0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
-        final int MAX_LENGTH = 30;
 
         List<String> lore = new ArrayList<>();
         if(seperate && 0 < lores.length) { lore.add(""); }
@@ -131,6 +132,7 @@ public class Items {
         return "&6Ability&7: "+name +"\n" +description;
     }
 
+
     public static SlimefunItemStack SMITHING_PRESS = new SlimefunItemStack("SMITHING_PRESS", Material.PLAYER_HEAD, "&fSmithing Press", fixLore(true, "&7Combine Items by dropping recipe items between piston and table.","&7Power the piston to activate.") );
     public static SlimefunItemStack ENDER_MAILBOX = new SlimefunItemStack("ENDER_MAILBOX", Material.PURPUR_BLOCK, "&5Ender Mailbox", fixLore(true, "&7Send/Recieve from to/from others","&7Create mail and Receive mail monthly.") );
     public static SlimefunItemStack ELECTURN = new SlimefunItemStack("ELECTURN", Material.LECTERN, "&fElecturn", fixLore(false, "&7Campaign for President!","&7Vote for president during the first 48hours of every fourth year.") );
@@ -171,12 +173,12 @@ public class Items {
     public static SlimefunItemStack SENSOR_COMPONENT_ONE = new SlimefunItemStack("SENSOR_COMPONENT_ONE",Material.OXIDIZED_COPPER,"&fSensor Component I",fixLore(false, "&8Crafting Material") );
     public static SlimefunItemStack SENSOR_COMPONENT_TWO = new SlimefunItemStack("SENSOR_COMPONENT_TWO",Material.OXIDIZED_COPPER,"&fSensor Component II",fixLore(false, "&8Crafting Material") );
 
-    public static SlimefunItemStack MOB_SENSOR = new SlimefunItemStack("MOB_SENSOR",Material.DARK_PRISMARINE,"&bMob Sensor",fixLore(false, "&7Senses nearby mobs","",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 10m)") );
-    public static SlimefunItemStack PLAYER_SENSOR = new SlimefunItemStack("PLAYER_SENSOR ",Material.LIGHT_BLUE_WOOL,"&bPlayer Sensor",fixLore(false, "&7Senses nearby players","",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 10m)") );
-    public static SlimefunItemStack ITEM_SENSOR = new SlimefunItemStack("ITEM_SENSOR",Material.LIGHT_BLUE_CONCRETE,"&bItem Sensor",fixLore(false, "&7Senses nearby items","",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 10m)") );
-    public static SlimefunItemStack ADVANCED_PLAYER_SENSOR = new SlimefunItemStack("ADVANCED_PLAYER_SENSOR",Material.BLUE_WOOL,"&bAdvanced Player Sensor",fixLore(false, "&7Senses nearby players","",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 15m)",SHIFT_RIGHT+"to toggle mode") );
+    public static SlimefunItemStack MOB_SENSOR = new SlimefunItemStack("MOB_SENSOR",Material.DARK_PRISMARINE,"&bMob Sensor",fixLore(false, "&7Senses nearby mobs",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 10m)") );
+    public static SlimefunItemStack PLAYER_SENSOR = new SlimefunItemStack("PLAYER_SENSOR ",Material.LIGHT_BLUE_WOOL,"&bPlayer Sensor",fixLore(false, "&7Senses nearby players",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 10m)") );
+    public static SlimefunItemStack ITEM_SENSOR = new SlimefunItemStack("ITEM_SENSOR",Material.LIGHT_BLUE_CONCRETE,"&bItem Sensor",fixLore(false, "&7Senses nearby items",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 10m)") );
+    public static SlimefunItemStack ADVANCED_PLAYER_SENSOR = new SlimefunItemStack("ADVANCED_PLAYER_SENSOR",Material.BLUE_WOOL,"&bAdvanced Player Sensor",fixLore(false, "&7Senses nearby players",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 15m)",SHIFT_RIGHT+"to toggle mode") );
     public static SlimefunItemStack ADVANCED_ITEM_SENSOR = new SlimefunItemStack("ADVANCED_ITEM_SENSOR",Material.BLUE_CONCRETE,"&bAdvanced Item Sensor",fixLore(false, "&7Senses nearby items","",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 15m)",SHIFT_RIGHT+"to toggle mode") );
-    public static SlimefunItemStack HOSTILITY_SENSOR = new SlimefunItemStack("HOSTILITY_SENSOR",Material.CHISELED_DEEPSLATE,"&4Hostility Sensor",fixLore(false, "&7Senses nearby combat","",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 30m)",SHIFT_RIGHT+"to toggle mode") );
+    public static SlimefunItemStack HOSTILITY_SENSOR = new SlimefunItemStack("HOSTILITY_SENSOR",Material.CHISELED_DEEPSLATE,"&4Hostility Sensor",fixLore(false, "&7Senses nearby combat",RIGHT_OR_LEFT+"to change radius\n&8(Maximum radius of 30m)",SHIFT_RIGHT+"to toggle mode") );
     public static SlimefunItemStack LASAGNA = new SlimefunItemStack("TYPHON_LASAGNA",Material.PLAYER_HEAD,format("<gradient:#FFAA00:#FFFF55>Lasagna"),fixLore(false, "&a+4&7 Saturation","&8Consumed on use") );
     public static SlimefunItemStack IMPASTA = new SlimefunItemStack("IMPASTA",Material.NAUTILUS_SHELL,"&eImpasta",fixLore(false, "&8Smithing Ingredient",ability(format("<gradient:#FFAA00:#FFFF55>When the Impasta is sauce!"),"&7When wearing any armor with this applied, ones' death message will differ.") )  );
     public static SlimefunItemStack LINGUINE_LANCE = new SlimefunItemStack("LINGUINE_LANCE",Material.IRON_SWORD,format("<gradient:#FFAA00:#FFFF55>Linguine Lance"),fixLore(false, "&7Damage: &c+7",ability(format("<gradient:#FFAA00:#FFFF55>I have the Pasta!"),RIGHT+"&7to activate 2x damage against Lasagnaughts\n&8Lasts 30s\n\n&7Once skill activation ends, bonus &aexp &7is awarded.") )  );
@@ -185,7 +187,7 @@ public class Items {
     public static SlimefunItemStack PASTAXE = new SlimefunItemStack("PASTAXE",Material.IRON_PICKAXE,format("<gradient:#FFAA00:#FFFF55>Pastaxe"),fixLore(true, ability(format("gradient<#FF0000:#AAAA00>Raviolo Repair"),"&7For every worn &aImpasta&7, increases the probability of keeping the current durability by 25%.") )  );
     public static SlimefunItemStack SAUCE_SPADE = new SlimefunItemStack("SAUCE_SPADE",Material.IRON_SHOVEL,format("<gradient:#AA0000:#FFAA00>Sauce Spade"),fixLore(true, ability(format("gradient<#FF0000:#AAAA00>Raviolo Repair"),"&7For every worn &aImpasta&7, increases the probability of keeping the current durability by 25%.") )  );
     public static SlimefunItemStack INFINIBURNER = new SlimefunItemStack("INFINIBURNER",Material.FIREWORK_ROCKET,"&fInfiniburner",fixLore(true, ability("&fInfinite Launch","&7Using this rocket does not expend the rocket"),"&7Soulbound") );
-    public static SlimefunItemStack PRISMATIC_DRAGON_WINGS = new SlimefunItemStack("PRISMATIC_DRAGON_WINGS",Material.ELYTRA,format("<gradient:#FF0000:#FFAA00>Prismatic ")+format("<gradient:#FFAA00:#00AAAA>Dragon ")+format("<gradient:#00AAAA:#AA00AA>Wings"),fixLore(true, ability("&fSugar Rush","&7The longer you fly, the larger a boost upon landing") )  );
+    public static SlimefunItemStack PRISMATIC_DRAGON_WINGS = new SlimefunItemStack("PRISMATIC_DRAGON_WINGS",Material.ELYTRA,format("<rainbow:!1>Prismatic Dragon Wings</rainbow>"),fixLore(true, ability("&fSugar Rush","&7The longer you fly, the larger a boost upon landing") )  );
     public static SlimefunItemStack WHITE_WARP_PIPE = new SlimefunItemStack("WHITE_WARP_PIPE", Material.PLAYER_HEAD, "&fWarp Pipe", fixLore(false, "&7Teleports you to another discovered, &fwhite&7 warp pipe in your current dimension.") );
     public static SlimefunItemStack RED_WARP_PIPE = new SlimefunItemStack("RED_WARP_PIPE", Material.PLAYER_HEAD, "&4Warp Pipe", fixLore(false, "&7Teleports you to another discovered, &4red&7 warp pipe in your current dimension.") );
     public static SlimefunItemStack CYAN_WARP_PIPE = new SlimefunItemStack("CYAN_WARP_PIPE", Material.PLAYER_HEAD, "&3Warp Pipe",fixLore(false, "&7Teleports you to another discovered, &3cyan&7 warp pipe in your current dimension.") );
@@ -197,11 +199,11 @@ public class Items {
     public static SlimefunItemStack MYSTICAL_PATINA = new SlimefunItemStack("MYSTICAL_PATINA",Material.PRISMARINE_CRYSTALS,format("<gradient:#55FF55:#55FFFF>Mystical Patina"),fixLore(false, "&8Crafting Material") );
     public static SlimefunItemStack SCALDING_STAFF = new SlimefunItemStack("SCALDING_STAFF",Material.BLAZE_ROD,format("<gradient:#FF0000:#FFAA00>Scalding Staff"), fixLore(false, "&f0/1 Buckets Filled", ability("&6Absorption",RIGHT+"&7on a water source to store in staffs' buckets"), ability("&6Jet Propulsion",LEFT+"&7to place stored water"), ability("&4Modular Storage","&7Place a bucket onto staff to increase storage by one.\n&8(Compatible with Fluid Tanks)") )  );
     public static SlimefunItemStack FLUTE_OF_WARPING = new SlimefunItemStack("FLUTE_OF_WARPING",Material.BAMBOO,"&aFlute of Warping",fixLore(true, ability("&6Super Tune","&7Play the correct tune to any random, visited, warp-pipe"),"&8(10m cooldown)") );
-    public static SlimefunItemStack SHOCK_SHIELD = new SlimefunItemStack("SHOCK_SHIELD",Material.SHIELD,"&fShock Shield",fixLore(true, ability("&fShock Absorption","&aRight Click to store attacks as CC"),ability("&fSelf-Repair","&aSneak&7 to use stored CC for shield repair"),"&70/800 CC") );
+    public static SlimefunItemStack SHOCK_SHIELD = new SlimefunItemStack("SHOCK_SHIELD",Material.SHIELD,"&fShock Shield",fixLore(true, ability("&fShock Absorption",RIGHT+"&7 to store attacks as CC"),ability("&fSelf-Repair","&aSneak&7 to use stored CC for shield repair"),"&70/800 CC") );
     public static SlimefunItemStack MINE_SWEEPER = new SlimefunItemStack("MINE_SWEEPER",Material.DIAMOND_SWORD,format("<gradient:#55FF55:#55FFFF>Mine Sweeper"),fixLore(false, "&7Damage: &c+9",ability(format("<gradient:#55FF55:#55FFFF>Target Lock"),"&7Mobs hit by sweep will fly further\nCompatible with Sweeping Edge and Knockback") )  );
     public static SlimefunItemStack SCULK_SPINE = new SlimefunItemStack("SCULK_SPINE",Material.BONE_BLOCK,"&3Sculk Spine",fixLore(true, "&7Record songs onto Echo Shards","&7Start recording with &credstone &7power: Records nearby note-blocks\n&8(100m radius)") );
 
-    public static SlimefunItemStack SCULK_BOX = new SlimefunItemStack("SCULK_BOX",Material.NOTE_BLOCK,"&3Sculk Box",fixLore(false, RIGHT+"&7with an Etched Echo Shard to play the record.","&7When powered by &credstone, the record will repeat.","&8(48m radius)") );
+    public static SlimefunItemStack SCULK_BOX = new SlimefunItemStack("SCULK_BOX",Material.NOTE_BLOCK,"&3Sculk Box",fixLore(false, RIGHT+"&7with an Etched Echo Shard to play the record.","&7When powered by &credstone&7, the record will repeat.","&8(48m radius)") );
     public static SlimefunItemStack EXPERIMENT_116 = new SlimefunItemStack("EXPERIMENT_116",Material.BREAD,"&fExperiment 116",fixLore(true, ability("&fEchos of Twilight","&7When consumed, gives Sonic Boom immunity for 60s") )  );
     public static SlimefunItemStack HISSING_FELT = new SlimefunItemStack("HISSING_FELT",Material.PLAYER_HEAD,format("<gradient:#00AA00:#005D5D>Hissing Felt"),fixLore(false, "&8Crafting Material") );
     public static SlimefunItemStack WONDER_PIPE = new SlimefunItemStack("WONDER_PIPE",Material.PLAYER_HEAD,"&fWonder Pipe",fixLore(false, "&7Teleports you to a random pipe in any dimension") );
@@ -209,7 +211,24 @@ public class Items {
     public static SlimefunItemStack PRISM_HOE = new SlimefunItemStack("PRISM_HOE",Material.DIAMOND_HOE,format("<gradient:#00AA00:#FFFFFF:#00FF00>Prism Hoe"),fixLore(true, ability("&bBeam Breaker","&750% chance to break adjacent blocks") ) );
     public static SlimefunItemStack PRISM_BREAKER = new SlimefunItemStack("PRISM_BREAKER",Material.NETHERITE_HOE,format("<gradient:#AA00AA:#FFFFFF:#55FF55>Prism Breaker"),fixLore(true, ability("&bBeam Breaker","&780% chance to break adjacent blocks") )  );
     public static SlimefunItemStack NETHERITE_MULTITOOL = new SlimefunItemStack("NETHERITE_MULTITOOL",Material.NETHERITE_PICKAXE,"&fNetherite Multitool",fixLore(true, ability("&fMultitasker",RIGHT+"&7to morph tool into clicked-block appropriate tool"),ability("&bBeam Breaker","&780% chance to break adjacent blocks"),"&8From crafting, tools keep enchants when used.") );
-    public static SlimefunItemStack PAINTERS_PALLET = new SlimefunItemStack("PAINTERS_PALLET",Material.LEATHER_HORSE_ARMOR,"&fPainters' Pallet",fixLore(false, RIGHT, "&7to dye a painters block with current dye.") );
+    public static SlimefunItemStack PAINTERS_PALLET = new SlimefunItemStack("PAINTERS_PALLET",Material.LEATHER_HORSE_ARMOR,"&fPainters' Pallet",fixLore(false, RIGHT+"&7to dye a painters block with current dye.") );
+
+
+    private static final String CHEDDAR_CHARGE = "&6CC&r";
+    private static String wattage(int cheddar_charge) { return "&e⚡ &7"+ cheddar_charge+CHEDDAR_CHARGE+"&7/s"; }
+    private static String delta_cheddar(int cheddar_charge) { return "&e⚡ &7"+ cheddar_charge+CHEDDAR_CHARGE+"&7/item"; }
+    private static String capacity(int cheddar_charge) { return "&a⚡ &7"+ cheddar_charge+CHEDDAR_CHARGE; }
+    private static String radius(int distance) { return "&f⚡ &7"+ distance+"&8m&7 range"; }
+
+    public static SlimefunItemStack POWER_BANK_I = new SlimefunItemStack("POWER_BANK_I",Material.GILDED_BLACKSTONE,"&6Power Bank I",fixLore(false, "&7Stores nearby, generated "+CHEDDAR_CHARGE+"&7.",capacity(800)+"\n"+radius(8) )  );
+    public static SlimefunItemStack POWER_BANK_II = new SlimefunItemStack("POWER_BANK_II",Material.GILDED_BLACKSTONE,"&6Power Bank II",fixLore(false, "&7Stores nearby, generated "+CHEDDAR_CHARGE+"&7.",capacity(2000)+"\n"+radius(16) )  );
+    public static SlimefunItemStack SEARING_ENGINE = new SlimefunItemStack("SEARING_ENGINE",Material.PLAYER_HEAD,"&fSearing Engine",fixLore(false, "&7Creates "+CHEDDAR_CHARGE+"&7 by burning &4Lava&7.", wattage(3) )  );
+    public static SlimefunItemStack TIDE_POOL_GENERATOR = new SlimefunItemStack("TIDE_POOL_GENERATOR",Material.DARK_PRISMARINE,format("<gradient:#0000AA:#FFFFFF>Tide Pool Generator"),fixLore(false, "&7Generates "+CHEDDAR_CHARGE+"&7 from flowing water.\n&8Flowing water must be immediately above generator.",wattage(2) ) );
+    public static SlimefunItemStack MOSS_MANAGER = new SlimefunItemStack("MOSS_MANAGER",Material.MOSS_BLOCK,"&2Moss Manager",fixLore(false,format("<gradient:#00AA00:#555555>Demossifies")+"&7 &2Moss&7-related blocks.",delta_cheddar(8) )  );
+    public static SlimefunItemStack RAINBOW_DYNAMO = new SlimefunItemStack("RAINBOW_DYNAMO",Material.PLAYER_HEAD,format("<rainbow:!1>Rainbow Dynamo</rainbow>"),fixLore(false, "&7Desaturates colored blocks.", delta_cheddar(5) )  );
+    public static SlimefunItemStack DRINK_BLENDER = new SlimefunItemStack("DRINK_BLENDER",Material.PRISMARINE,format("<gradient:#00AAAA:#0000AA>Drink Blender"),fixLore(false, "&7Modifiable drink mixer", delta_cheddar(10) )  );
+    public static SlimefunItemStack JUICE_PRESS = new SlimefunItemStack("JUICE_PRESS",Material.MAGENTA_TERRACOTTA,"&aJuice Press",fixLore(false, "&7Turns produce into juices", delta_cheddar(5) )  );
+    public static SlimefunItemStack SMOOTHIE_MAKER = new SlimefunItemStack("SMOOTHIE_MAKER",Material.PURPLE_TERRACOTTA,"&bSmoothie Maker",fixLore(false, "&7Turns produce into smoothies", delta_cheddar(5) )  );
 
     //more
     //public static SlimefunItemStack = new SlimefunItemStack("",Material.,"","");

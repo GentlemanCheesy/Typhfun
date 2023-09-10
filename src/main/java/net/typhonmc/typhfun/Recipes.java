@@ -380,6 +380,53 @@ public class Recipes {
             null,                            new ItemStack(Material.CALCITE), null
     };
 
+
+    public static ItemStack[] POWER_BANK_I = {
+            new ItemStack(Material.GILDED_BLACKSTONE), getById("GILDED_IRON").getItem(),    new ItemStack(Material.GILDED_BLACKSTONE),
+            getById("SILICON").getItem(),              getById("REDSTONE_ALLOY").getItem(), getById("SILICON").getItem(),
+            new ItemStack(Material.GILDED_BLACKSTONE), getById("GILDED_IRON").getItem(),    new ItemStack(Material.GILDED_BLACKSTONE)
+    };
+    public static ItemStack[] POWER_BANK_II = {
+            new ItemStack(Material.NETHERITE_SCRAP), new ItemStack(Material.LIGHTNING_ROD), new ItemStack(Material.NETHERITE_SCRAP),
+            getById("BATTERY").getItem(),            Items.POWER_BANK_I,                    getById("BATTERY").getItem(),
+            getById("GILDED_IRON").getItem(),        getById("GILDED_IRON").getItem(),      getById("GILDED_IRON").getItem()
+    };
+    public static ItemStack[] SEARING_ENGINE = {
+            new ItemStack(Material.POLISHED_DEEPSLATE), new ItemStack(Material.LAVA_BUCKET),   new ItemStack(Material.POLISHED_DEEPSLATE),
+            getById("SILICON").getItem(),               getById("REDSTONE_ALLOY").getItem(),   getById("SILICON").getItem(),
+            new ItemStack(Material.POLISHED_DEEPSLATE), new ItemStack(Material.BLAST_FURNACE), new ItemStack(Material.POLISHED_DEEPSLATE)
+    };
+    public static ItemStack[] TIDE_POOL_GENERATOR = {
+            new ItemStack(Material.SEA_LANTERN), Items.PRISTINE_PRISMARINE_SHARD, new ItemStack(Material.SEA_LANTERN),
+            getById("SILICON").getItem(),               getById("REDSTONE_ALLOY").getItem(),   getById("SILICON").getItem(),
+            new ItemStack(Material.DARK_PRISMARINE), getById("ELECTRIC_MOTOR").getItem(), new ItemStack(Material.DARK_PRISMARINE)
+    };
+    public static ItemStack[] MOSS_MANAGER = {
+            new ItemStack(Material.MOSS_BLOCK), new ItemStack(Material.SHEARS),           new ItemStack(Material.MOSS_BLOCK),
+            getById("SILICON").getItem(),       getById("REDSTONE_ALLOY").getItem(),      getById("SILICON").getItem(),
+            new ItemStack(Material.MOSS_BLOCK), new ItemStack(Material.ENCHANTING_TABLE), new ItemStack(Material.MOSS_BLOCK)
+    };
+    public static ItemStack[] RAINBOW_DYNAMO = {
+            null,                               Items.PRISMARINE_PRISM,                    null,
+            getById("SILICON").getItem(),       getById("REDSTONE_ALLOY").getItem(),       getById("SILICON").getItem(),
+            new ItemStack(Material.IRON_BLOCK), getById("ANCIENT_RUNE_RAINBOW").getItem(), new ItemStack(Material.IRON_BLOCK)
+    };
+    public static ItemStack[] DRINK_BLENDER = {
+            Items.PRISTINE_PRISMARINE_SHARD,   Items.DRINK_MIXER,                        Items.PRISTINE_PRISMARINE_SHARD,
+            getById("SILICON").getItem(),      getById("REDSTONE_ALLOY").getItem(),      getById("SILICON").getItem(),
+            getById("HEATING_COIL").getItem(), getById("BASIC_CIRCUIT_BOARD").getItem(), getById("COOLING_UNIT").getItem()
+    };
+    public static ItemStack[] JUICE_PRESS = {
+            getById("DAMASCUS_STEEL_INGOT").getItem(), new ItemStack(Material.PISTON),           getById("DAMASCUS_STEEL_INGOT").getItem(),
+            getById("REDSTONE_ALLOY").getItem(),       getById("COOLING_UNIT").getItem(),        getById("REDSTONE_ALLOY").getItem(),
+            new ItemStack(Material.OAK_WOOD),          getById("BASIC_CIRCUIT_BOARD").getItem(), new ItemStack(Material.OAK_WOOD)
+    };
+    public static ItemStack[] SMOOTHIE_MAKER = {
+            getById("DAMASCUS_STEEL_INGOT").getItem(), new ItemStack(Material.PISTON),              getById("DAMASCUS_STEEL_INGOT").getItem(),
+            getById("ANCIENT_RUNE_AIR").getItem(),     Items.JUICE_PRESS,                           getById("ANCIENT_RUNE_AIR").getItem(),
+            new ItemStack(Material.BLUE_ICE),          getById("ADVANCED_CIRCUIT_BOARD").getItem(), new ItemStack(Material.BLUE_ICE)
+    };
+
     //more here
 
     private static ItemStack getCustomItem(Material appearance, String name, String... lores) {
