@@ -12,6 +12,8 @@ import static net.typhonmc.typhfun.Items.format;
 
 public class Recipes {
 
+    private static final String TAPS = "T";
+
     public static ItemStack[] SMITHING_PRESS = {
             null, getCustomItem( Material.PISTON, "Piston (Facing Down)" ) , null,
             null, null, null,
@@ -425,6 +427,52 @@ public class Recipes {
             getById("DAMASCUS_STEEL_INGOT").getItem(), new ItemStack(Material.PISTON),              getById("DAMASCUS_STEEL_INGOT").getItem(),
             getById("ANCIENT_RUNE_AIR").getItem(),     Items.JUICE_PRESS,                           getById("ANCIENT_RUNE_AIR").getItem(),
             new ItemStack(Material.BLUE_ICE),          getById("ADVANCED_CIRCUIT_BOARD").getItem(), new ItemStack(Material.BLUE_ICE)
+    };
+
+    public static ItemStack[] ELECTRIC_REFURBISHER = {
+            new ItemStack(Material.SMOOTH_STONE), new ItemStack(Material.DIAMOND_AXE), new ItemStack(Material.SMOOTH_STONE),
+            getById("SILICON").getItem(),         getById("REDSTONE_ALLOY").getItem(), getById("SILICON").getItem(),
+            new ItemStack(Material.IRON_BLOCK),   new ItemStack(Material.IRON_BLOCK),  new ItemStack(Material.IRON_BLOCK)
+    };
+    public static ItemStack[] ELECTRIC_OXIDIZER = {
+            new ItemStack(Material.COPPER_BLOCK), Items.STONE_FLUID_TANK,                   new ItemStack(Material.COPPER_BLOCK),
+            new ItemStack(Material.SPYGLASS),     getById("REDSTONE_ALLOY").getItem(),      new ItemStack(Material.SPYGLASS),
+            new ItemStack(Material.COPPER_BLOCK), new ItemStack(Material.ENCHANTING_TABLE), new ItemStack(Material.COPPER_BLOCK)
+    };
+    public static ItemStack[] ELECTRIC_STUDIO = {
+            null, null,                                                                                                         null,
+            null, getCustomItem(Material.PLAYER_HEAD,"Painter",Typhfun.prices.get("prices.Electric-Studio")+TAPS), null,
+            null, null,                                                                                                         null
+    };
+    public static ItemStack[] SLAUGHTER_BOX = {
+            new ItemStack(Material.COPPER_BLOCK),    new ItemStack(Material.LIGHTNING_ROD), new ItemStack(Material.COPPER_BLOCK),
+            new ItemStack(Material.NETHERITE_SWORD), getById("REDSTONE_ALLOY").getItem(),   new ItemStack(Material.NETHERITE_SWORD),
+            new ItemStack(Material.IRON_BLOCK),      Items.MYSTICAL_PATINA,                 new ItemStack(Material.IRON_BLOCK)
+    };
+    public static ItemStack[] SUPER_MAGNET = {
+            null,                         new ItemStack(Material.LIGHTNING_ROD), null,
+            getById("SILICON").getItem(), getById("REDSTONE_ALLOY").getItem(),   getById("SILICON").getItem(),
+            null,                         getById("ELECTRO_MAGNET").getItem(),   null
+    };
+    public static ItemStack[] ELECTRIC_ENCHANTER = {
+            getById("HARDENED_METAL_INGOT").getItem(), getById("SYNTHETIC_SAPPHIRE").getItem(),  getById("HARDENED_METAL_INGOT").getItem(),
+            getById("SILICON").getItem(),              getById("REDSTONE_ALLOY").getItem(),      getById("SILICON").getItem(),
+            new ItemStack(Material.LAPIS_BLOCK),       new ItemStack(Material.ENCHANTING_TABLE), new ItemStack(Material.LAPIS_BLOCK)
+    };
+    public static ItemStack[] ELECTRIC_DISENCHANTER = {
+            getById("HARDENED_METAL_INGOT").getItem(), getById("SYNTHETIC_SAPPHIRE").getItem(),  getById("HARDENED_METAL_INGOT").getItem(),
+            getById("SILICON").getItem(),              getById("REDSTONE_ALLOY").getItem(),      getById("SILICON").getItem(),
+            new ItemStack(Material.ENCHANTING_TABLE),  Items.ELECTRIC_ENCHANTER,                 new ItemStack(Material.ENCHANTING_TABLE)
+    };
+    public static ItemStack[] REDSTONE_ACTIVATION_MOD = {
+            null,                                   new ItemStack(Material.OBSERVER),         null,
+            new ItemStack(Material.AMETHYST_SHARD), getById("BASIC_CIRCUIT_BOARD").getItem(), new ItemStack(Material.AMETHYST_SHARD),
+            null,                                   new ItemStack(Material.COMPARATOR),       null
+    };
+    public static ItemStack[] REDSTONE_SWITCH_MOD = {
+            null,                                 new ItemStack(Material.OBSERVER),         null,
+            new ItemStack(Material.COPPER_INGOT), getById("BASIC_CIRCUIT_BOARD").getItem(), new ItemStack(Material.COPPER_INGOT),
+            null,                                 new ItemStack(Material.COMPARATOR),       null
     };
 
     //more here

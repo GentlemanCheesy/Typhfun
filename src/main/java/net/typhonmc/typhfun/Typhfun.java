@@ -14,7 +14,15 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.HashMap;
+
 public final class Typhfun extends JavaPlugin implements SlimefunAddon {
+    public static HashMap<String,Integer> prices = new HashMap<>();
+
+    private Config settings;
+    private void registerPrice(String name) {
+        prices.put( name, settings.getInt(name) );
+    }
 
     //Create custom Recipe Types
     //private final RecipeType RECIPETYPE_DRINK_MIXER = ?
@@ -22,14 +30,14 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
     //private final RecipeType CUSTOM_MOB_DROP = ?
     //private final RecipeType OXIDIZER = ?
     //private final RecipeType STRUCTURE_LOOT = ?
+    //private final RecipeType SHOP = ?
 
     @Override
     public void onEnable() {
-        Config settings;
         /*Get config values*/ {
             settings = new Config(this);
 
-            //more things (later, mostly for prices)
+            registerPrice("prices.Electric-Studio");
         }
 
         //Create a new category with subcategories
@@ -131,6 +139,16 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             new SlimefunItem(cheesy_power, Items.DRINK_BLENDER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.DRINK_BLENDER).register(this);
             new SlimefunItem(cheesy_power, Items.JUICE_PRESS, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.JUICE_PRESS).register(this);
             new SlimefunItem(cheesy_power, Items.SMOOTHIE_MAKER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SMOOTHIE_MAKER).register(this);
+
+            new SlimefunItem(cheesy_power, Items.ELECTRIC_REFURBISHER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.ELECTRIC_REFURBISHER).register(this);
+            new SlimefunItem(cheesy_power, Items.ELECTRIC_OXIDIZER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.ELECTRIC_OXIDIZER).register(this);
+            new SlimefunItem(cheesy_power, Items.ELECTRIC_STUDIO, RecipeType.NULL, Recipes.ELECTRIC_STUDIO).register(this); //<--- RecipeType.SHOP
+            new SlimefunItem(cheesy_power, Items.SLAUGHTER_BOX, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SLAUGHTER_BOX).register(this);
+            new SlimefunItem(cheesy_power, Items.SUPER_MAGNET, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.SUPER_MAGNET).register(this);
+            new SlimefunItem(cheesy_power, Items.ELECTRIC_ENCHANTER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.ELECTRIC_ENCHANTER).register(this);
+            new SlimefunItem(cheesy_power, Items.ELECTRIC_DISENCHANTER, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.ELECTRIC_DISENCHANTER).register(this);
+            new SlimefunItem(cheesy_power, Items.REDSTONE_ACTIVATION_MOD, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.REDSTONE_ACTIVATION_MOD).register(this);
+            new SlimefunItem(cheesy_power, Items.REDSTONE_SWITCH_MOD, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.REDSTONE_SWITCH_MOD).register(this);
 
             //more
             //new SlimefunItem(cheesy_power, Items., RecipeType., Recipes.).register(this);

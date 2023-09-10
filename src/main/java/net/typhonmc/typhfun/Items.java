@@ -217,6 +217,7 @@ public class Items {
     private static final String CHEDDAR_CHARGE = "&6CC&r";
     private static String wattage(int cheddar_charge) { return "&e⚡ &7"+ cheddar_charge+CHEDDAR_CHARGE+"&7/s"; }
     private static String delta_cheddar(int cheddar_charge) { return "&e⚡ &7"+ cheddar_charge+CHEDDAR_CHARGE+"&7/item"; }
+    private static String delta_cheddar(int cheddar_charge,String denominator_unit) { return "&e⚡ &7"+ cheddar_charge+CHEDDAR_CHARGE+"&7/"+denominator_unit; }
     private static String capacity(int cheddar_charge) { return "&a⚡ &7"+ cheddar_charge+CHEDDAR_CHARGE; }
     private static String radius(int distance) { return "&f⚡ &7"+ distance+"&8m&7 range"; }
 
@@ -230,9 +231,17 @@ public class Items {
     public static SlimefunItemStack JUICE_PRESS = new SlimefunItemStack("JUICE_PRESS",Material.MAGENTA_TERRACOTTA,"&aJuice Press",fixLore(false, "&7Turns produce into juices", delta_cheddar(5) )  );
     public static SlimefunItemStack SMOOTHIE_MAKER = new SlimefunItemStack("SMOOTHIE_MAKER",Material.PURPLE_TERRACOTTA,"&bSmoothie Maker",fixLore(false, "&7Turns produce into smoothies", delta_cheddar(5) )  );
 
+    public static SlimefunItemStack ELECTRIC_REFURBISHER = new SlimefunItemStack("ELECTRIC_REFURBISHER",Material.WAXED_COPPER_BLOCK,format("<gradient:#44DD44:#FFAA00>Electric Refurbisher"),fixLore(false, "&7Strips Logs and Wood,\nDecrements oxidation stage of Copper Blocks",delta_cheddar(2) )  );
+    public static SlimefunItemStack ELECTRIC_OXIDIZER = new SlimefunItemStack("ELECTRIC_OXIDIZER",Material.WAXED_OXIDIZED_COPPER,format("<gradient:#FFAA00:#44DD44>Electric Oxidizer"),fixLore(false, "&7Increments oxidation stage of Copper Blocks.",delta_cheddar(3) )  );
+    public static SlimefunItemStack ELECTRIC_STUDIO = new SlimefunItemStack("ELECTRIC_STUDIO",Material.PAPER,"&fElectric Studio",fixLore(false, "&7All-in-one painting station!",delta_cheddar(2) )  );
+    public static SlimefunItemStack SLAUGHTER_BOX = new SlimefunItemStack("SLAUGHTER_BOX",Material.PLAYER_HEAD,"&4Slaughterbox",fixLore(false, "&7Damages most nearby entities.\n&82 Attack Damage",wattage(2)+"\n"+radius(10) )  );
+    public static SlimefunItemStack SUPER_MAGNET = new SlimefunItemStack("SUPER_MAGNET",Material.PLAYER_HEAD,"&fSuper Magnet",fixLore(false,"&7Pulls items to magnet.",delta_cheddar(1,"itemStack")+"\n"+radius(10) )  );
+    public static SlimefunItemStack ELECTRIC_ENCHANTER = new SlimefunItemStack("ELECTRIC_ENCHANTER",Material.PINK_TERRACOTTA,"&fElectric Enchanter",fixLore(false, "&7Moves enchants from a book to a tool.",delta_cheddar(20,"enchant_level") )  );
+    public static SlimefunItemStack ELECTRIC_DISENCHANTER = new SlimefunItemStack("ELECTRIC_DISENCHANTER",Material.LIGHT_BLUE_TERRACOTTA,"&fElectric Disenchanter",fixLore(false, "&7Moves enchants from a tool to a book.",delta_cheddar(25,"enchant_level") )  );
+    public static SlimefunItemStack REDSTONE_ACTIVATION_MOD = new SlimefunItemStack("REDSTONE_ACTIVATION_MOD",Material.COMPARATOR,"&cRedstone Activation&7 Mod",fixLore(false, "&7Changes machine to only be active when powered by &credstone") );
+    public static SlimefunItemStack REDSTONE_SWITCH_MOD = new SlimefunItemStack("REDSTONE_SWITCH_MOD",Material.COMPARATOR,"&cRedstone Switch&7 Mod",fixLore(false, "&7Changes machine to only be active when not powered by &credstone") );
+
     //more
     //public static SlimefunItemStack = new SlimefunItemStack("",Material.,"","");
-
-    public static SlimefunItemStack REDSTONE_ACTIVATION_MOD = new SlimefunItemStack("REDSTONE_ACTIVATION_MOD",Material.COMPARATOR,"&cRedstone Activation &7Mod",fixLore(false, "&7Changes machine to only be active when powered by &credstone") );
 
 }
