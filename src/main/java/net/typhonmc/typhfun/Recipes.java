@@ -1,7 +1,6 @@
 package net.typhonmc.typhfun;
 
 import org.bukkit.Material;
-import org.bukkit.entity.Item;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
@@ -440,9 +439,9 @@ public class Recipes {
             new ItemStack(Material.COPPER_BLOCK), new ItemStack(Material.ENCHANTING_TABLE), new ItemStack(Material.COPPER_BLOCK)
     };
     public static ItemStack[] ELECTRIC_STUDIO = {
-            null, null,                                                                                                         null,
-            null, getCustomItem(Material.PLAYER_HEAD,"Painter",Typhfun.prices.get("prices.Electric-Studio")+TAPS), null,
-            null, null,                                                                                                         null
+            null, null,                                                                                                                      null,
+            null, getCustomItem(Material.PLAYER_HEAD,"Painter", Typhfun.settings.getString("prices.Electric-Studio")+Typhfun.CURRENCY), null,
+            null, null,                                                                                                                      null
     };
     public static ItemStack[] SLAUGHTER_BOX = {
             new ItemStack(Material.COPPER_BLOCK),    new ItemStack(Material.LIGHTNING_ROD), new ItemStack(Material.COPPER_BLOCK),
@@ -477,11 +476,11 @@ public class Recipes {
 
     //more here
 
-    private static ItemStack getCustomItem(Material appearance, String name, String... lores) {
+    public static ItemStack getCustomItem(Material appearance, String name, String... lores) {
         ItemStack current = new ItemStack(appearance);
 
         ItemMeta metadata = current.getItemMeta(); metadata.setDisplayName( name.replace('&','§') );
-        List<String> lore = new ArrayList<String>(); for(String line : lores) { lore.add(line); }
+        List<String> lore = new ArrayList<>(); for(String line : lores) { lore.add(line); }
         metadata.setLore(lore);
 
         current.setItemMeta( metadata );

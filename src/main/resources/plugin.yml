@@ -6,3 +6,8 @@ website: https://github.com/GentlemanCheesy/Typhfun
 main: net.typhonmc.typhfun.Typhfun
 api-version: '1.20'
 depend: [Slimefun]
+commands:
+  typhfun:
+    description: Plugin root command
+    usage: /<command> <argument>
+    permission: typhfun.typhfun
