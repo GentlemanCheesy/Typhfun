@@ -177,13 +177,19 @@ public final class Typhfun extends JavaPlugin implements SlimefunAddon {
             items.add( new SlimefunItem(cheesy_power, Items.REDSTONE_ACTIVATION_MOD, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.REDSTONE_ACTIVATION_MOD) );
             items.add( new SlimefunItem(cheesy_power, Items.REDSTONE_SWITCH_MOD, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.REDSTONE_SWITCH_MOD) );
 
-            //more
-            //new SlimefunItem(cheesy_power, Items., RecipeType., Recipes.)) ;
+            items.add( new SlimefunItem(cheesy_power, Items.HOPPER_MOD, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.HOPPER_MOD) );
+            items.add( new SlimefunItem(cheesy_power, Items.FUNNEL_MOD, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.FUNNEL_MOD) );
+            items.add( new SlimefunItem(cheesy_power, Items.DISRUPTION_MOD, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.DISRUPTION_MOD) );
+            items.add( new SlimefunItem(cheesy_power, Items.MAGMATIC_MOD, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.MAGMATIC_MOD) );
+            items.add( new SlimefunItem(cheesy_power, Items.ECHOLOMATIC_MOD, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.ECHOLOMATIC_MOD) );
+            items.add( new SlimefunItem(cheesy_power, Items.WARDSTATIC_MOD, RecipeType.ENHANCED_CRAFTING_TABLE, Recipes.WARDSTATIC_MOD) );
 
             log.info("Completed adding Power subGroup to Typhfun itemGroup in Slimefun Guide");
         }
         /*Cheesy Events*/ {
+
             //more
+            //items.add( new SlimefunItem(cheesy_events, Items., RecipeType., Recipes.) );
 
             log.info("Completed adding Events subGroup to Typhfun itemGroup in Slimefun Guide");
         }

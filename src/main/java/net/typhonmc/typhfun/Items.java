@@ -241,6 +241,13 @@ public class Items {
     public static SlimefunItemStack REDSTONE_ACTIVATION_MOD = new SlimefunItemStack("REDSTONE_ACTIVATION_MOD",Material.COMPARATOR,"&cRedstone Activation&7 Mod",fixLore(false, "&7Changes machine to only be active when powered by &credstone") );
     public static SlimefunItemStack REDSTONE_SWITCH_MOD = new SlimefunItemStack("REDSTONE_SWITCH_MOD",Material.COMPARATOR,"&cRedstone Switch&7 Mod",fixLore(false, "&7Changes machine to only be active when not powered by &credstone") );
 
+    public static SlimefunItemStack HOPPER_MOD = new SlimefunItemStack("HOPPER_MOD",Material.HOPPER,"&fHopper Mod",fixLore(false, "&7Adds Hopper-interaction") );
+    public static SlimefunItemStack FUNNEL_MOD = new SlimefunItemStack("FUNNEL_MOD",Material.HOPPER,"&fFunnel Mod","&7Adds Hopper-interaction,\nbut only moves full slots");
+    public static SlimefunItemStack DISRUPTION_MOD = new SlimefunItemStack("DISRUPTION_MOD",Material.SHULKER_SHELL,"&dDisruption&f Mod",fixLore(false, "&7Adds disruption to nearby power signals") );
+    public static SlimefunItemStack MAGMATIC_MOD = new SlimefunItemStack("MAGMATIC_MOD",Material.MAGMA_CREAM,"&6Magmatic&f Mod",fixLore(false, "&7Adds Combustible-item-interaction") );
+    public static SlimefunItemStack ECHOLOMATIC_MOD = new SlimefunItemStack("ECHOLOMATIC_MOD",Material.ECHO_SHARD,format("<gradient:#5555FF:#55FFFF>Echolomatic</gradient>&f Mod"),fixLore(false, "&7Adds sound emissions") );
+    public static SlimefunItemStack WARDSTATIC_MOD = new SlimefunItemStack("WARDSTATIC_MOD",Material.SCULK,format("<gradient:#5555FF:#55FFFF>Wardstatic</gradient>&f Mod"),fixLore(false, "&7Adds recipe-use maximum;\nresets by placing Sculk-Block adjacent",RIGHT+"&7to set use-count") );
+
     //more
     //public static SlimefunItemStack = new SlimefunItemStack("",Material.,"","");
 

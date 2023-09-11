@@ -474,6 +474,37 @@ public class Recipes {
             null,                                 new ItemStack(Material.COMPARATOR),       null
     };
 
+    public static ItemStack[] HOPPER_MOD = {
+            null,                        new ItemStack(Material.OBSERVER),         null,
+            getById("MAGNET").getItem(), getById("BASIC_CIRCUIT_BOARD").getItem(), getById("MAGNET").getItem(),
+            null,                        new ItemStack(Material.COMPARATOR),       null
+    };
+    public static ItemStack[] FUNNEL_MOD = {
+            null,                        new ItemStack(Material.HOPPER),              null,
+            getById("MAGNET").getItem(), getById("ADVANCED_CIRCUIT_BOARD").getItem(), getById("MAGNET").getItem(),
+            null,                        new ItemStack(Material.COMPARATOR),          null
+    };
+    public static ItemStack[] DISRUPTION_MOD = {
+            null,                               new ItemStack(Material.SHULKER_SHELL),       null,
+            getById("MAGNET").getItem(),        getById("ADVANCED_CIRCUIT_BOARD").getItem(), getById("MAGNET").getItem(),
+            new ItemStack(Material.COMPARATOR), new ItemStack(Material.SHULKER_SHELL),       new ItemStack(Material.COMPARATOR)
+    };
+    public static ItemStack[] MAGMATIC_MOD = {
+            null,                                new ItemStack(Material.ANVIL),               null,
+            new ItemStack(Material.MAGMA_BLOCK), getById("ADVANCED_CIRCUIT_BOARD").getItem(), new ItemStack(Material.MAGMA_BLOCK),
+            new ItemStack(Material.COMPARATOR),  new ItemStack(Material.LAVA_BUCKET),         new ItemStack(Material.COMPARATOR)
+    };
+    public static ItemStack[] ECHOLOMATIC_MOD = {
+            null,                               new ItemStack(Material.SCULK_SHRIEKER),      null,
+            new ItemStack(Material.ECHO_SHARD), getById("ADVANCED_CIRCUIT_BOARD").getItem(), new ItemStack(Material.ECHO_SHARD),
+            null,                               Items.PRISMARINE_PRISM,                      null
+    };
+    public static ItemStack[] WARDSTATIC_MOD = {
+            null,                          new ItemStack(Material.SCULK_SENSOR),        null,
+            new ItemStack(Material.SCULK), getById("ADVANCED_CIRCUIT_BOARD").getItem(), new ItemStack(Material.SCULK),
+            null,                          new ItemStack(Material.CLOCK),               null
+    };
+
     //more here
 
     public static ItemStack getCustomItem(Material appearance, String name, String... lores) {
